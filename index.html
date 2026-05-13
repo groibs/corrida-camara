@@ -203,7 +203,9 @@ const EQUIPE=[
 ];
 const CORREDORES=["Clarice","Well","Carol","Malu","Pedro","Isaque","Mari","Diego","Vera","Yusseff"];
 
-const flat=d=>Object.values(d).flatMap(s=>s.platforms.flatMap(p=>p.items));
+const SECTION_ORDER=["preCorrida","diaCorrida"];
+const orderedSectionEntries=d=>[...SECTION_ORDER.filter(k=>d[k]),...Object.keys(d).filter(k=>!SECTION_ORDER.includes(k))].map(k=>[k,d[k]]);
+const flat=d=>orderedSectionEntries(d).flatMap(([,s])=>s.platforms.flatMap(p=>p.items));
 const pct=(a,b)=>b===0?0:Math.round(a/b*100);
 const sClr=p=>p<33?"#C0392B":p<66?B.yellow:B.greenL;
 const fmt=d=>d?d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit",second:"2-digit"}):"";
@@ -216,9 +218,13 @@ function mergeChecklistData(saved){
       platform.items.forEach(item=>mandatoryById.set(item.id,item.mandatory));
     });
   });
-  return Object.fromEntries(Object.entries(saved).map(([sectionKey,section])=>[
+  const merged={...saved};
+  return Object.fromEntries(orderedSectionEntries(INITIAL).map(([sectionKey,initialSection])=>{
+    const section=merged[sectionKey]||initialSection;
+    return [
     sectionKey,
     {
+      ...initialSection,
       ...section,
       platforms:section.platforms?.map(platform=>({
         ...platform,
@@ -228,7 +234,8 @@ function mergeChecklistData(saved){
         }))||[],
       }))||[],
     },
-  ]));
+  ];
+  }).concat(Object.entries(merged).filter(([sectionKey])=>!SECTION_ORDER.includes(sectionKey))));
 }
 
 function Checkbox({done}){
@@ -372,7 +379,7 @@ function App(){
       </div>
 
       {/* ── SECTIONS ── */}
-      {Object.entries(data).map(([sk,section])=>{
+      {orderedSectionEntries(data).map(([sk,section])=>{
         const items=section.platforms.flatMap(p=>p.items);
         const sd=items.filter(i=>i.done).length,st=items.length,sp=pct(sd,st);
         const acc=section.accent||B.green;
