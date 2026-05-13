@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 22px 24px; gap: 14px; align-items: stretch; }
+  .field { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; }
+  .field label {
+    font-family: var(--font-body); font-weight: 700; font-size: 11px;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--fg-2);
+  }
+  .field input, .field select {
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding: 12px 14px;
+    border: 1.5px solid var(--brand-black);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--fg-1);
+    outline: none;
+  }
+  .field input:focus, .field select:focus {
+    box-shadow: 0 0 0 3px var(--brand-cyan);
+  }
+  .field.err input { border-color: #d92020; }
+  .field .hint { font-size: 11px; color: var(--fg-3); font-family: var(--font-body); }
+  .field.err .hint { color: #d92020; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="field">
+      <label for="nm">Nome completo</label>
+      <input id="nm" type="text" value="Beatriz Carvalho">
+      <span class="hint">Como deve aparecer no peitoral.</span>
+    </div>
+    <div class="field">
+      <label for="dist">Distância</label>
+      <select id="dist"><option>10K · R$ 89,90</option></select>
+      <span class="hint">Largada às 7h.</span>
+    </div>
+    <div class="field err">
+      <label for="em">E-mail</label>
+      <input id="em" type="email" value="bia@email">
+      <span class="hint">Endereço inválido.</span>
+    </div>
+  </div>
+</body>
+</html>

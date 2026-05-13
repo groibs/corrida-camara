@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 18px 24px; gap: 24px; align-items: stretch; }
+  .col-blk { display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center; flex: 1; }
+  .bib {
+    background: var(--brand-black);
+    color: var(--brand-lime);
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 88px;
+    line-height: 1;
+    padding: 16px 24px;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .time {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 56px;
+    color: var(--brand-black);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .time .sec { color: var(--brand-magenta); }
+  .pc-label { text-align: center; }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="col-blk">
+      <div class="bib">0427</div>
+      <div class="pc-label">Bib number · Big Shoulders 900</div>
+    </div>
+    <div class="col-blk">
+      <div class="time">00:42<span class="sec">:18</span></div>
+      <div class="pc-label">Race time · JetBrains Mono 700, tabular</div>
+    </div>
+  </div>
+</body>
+</html>

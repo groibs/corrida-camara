@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+  }
+  .pc-tile {
+    aspect-ratio: 5 / 4;
+    border-radius: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line-1);
+  }
+  .pc-tile img { width: 80%; height: auto; display: block; }
+</style>
+</head>
+<body>
+  <div class="pc-card col">
+    <div class="pc-grid">
+      <div class="pc-tile" style="background:#fff;">
+        <img src="../assets/logos/logo-orange-purple.png" alt="">
+      </div>
+      <div class="pc-tile" style="background:var(--brand-cyan);">
+        <img src="../assets/logos/logo-on-cyan.png" alt="">
+      </div>
+      <div class="pc-tile" style="background:var(--brand-orange);">
+        <img src="../assets/logos/logo-on-orange.png" alt="">
+      </div>
+      <div class="pc-tile" style="background:var(--brand-lime);">
+        <img src="../assets/logos/logo-on-green.png" alt="">
+      </div>
+    </div>
+    <div class="pc-label" style="text-align:center; margin-top:4px;">
+      Color variants · on white · on cyan · on orange · on lime
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 30px 24px 24px; gap: 28px; align-items: flex-start; background: #fafaf8; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .box {
+    width: 88px; height: 64px;
+    background: #ffffff;
+  }
+  .sm  { box-shadow: var(--shadow-sm); }
+  .md  { box-shadow: var(--shadow-md); }
+  .lg  { box-shadow: var(--shadow-lg); }
+  .hard { box-shadow: var(--shadow-hard); }
+  .hardlime { box-shadow: var(--shadow-hard-lime); background: var(--brand-black); }
+  .nm { font-family: var(--font-body); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+  .v  { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); text-align: center; }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="item"><div class="box sm"></div><span class="nm">SM</span><span class="v">0 1 2 / .08</span></div>
+    <div class="item"><div class="box md"></div><span class="nm">MD</span><span class="v">0 6 16 / .10</span></div>
+    <div class="item"><div class="box lg"></div><span class="nm">LG</span><span class="v">0 18 40 / .16</span></div>
+    <div class="item"><div class="box hard"></div><span class="nm">Hard · black</span><span class="v">6 6 0 #131</span></div>
+    <div class="item"><div class="box hardlime"></div><span class="nm">Hard · lime</span><span class="v">6 6 0 lime</span></div>
+  </div>
+</body>
+</html>

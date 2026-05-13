@@ -1,0 +1,30 @@
+/* Preview-card baseline. All cards link colors_and_type.css then this. */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: var(--font-body);
+  color: var(--fg-1);
+}
+.pc-card {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pc-card.col { flex-direction: column; align-items: stretch; justify-content: center; gap: 12px; }
+.pc-row { display: flex; align-items: center; gap: 12px; }
+.pc-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+
+.pc-label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+.pc-mono { font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); }

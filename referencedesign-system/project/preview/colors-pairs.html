@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 0; align-items: stretch; min-height: 200px; }
+  .pair { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 24px; }
+  .dots { display: flex; gap: 6px; }
+  .dot { width: 28px; height: 28px; border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
+  .pair .lbl {
+    font-family: var(--font-headline);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .pair .sub { font-family: var(--font-body); font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="pair" style="background: var(--brand-lime); color: var(--brand-black);">
+      <div class="dots">
+        <span class="dot" style="background:var(--brand-lime);"></span>
+        <span class="dot" style="background:var(--brand-magenta);"></span>
+        <span class="dot" style="background:var(--brand-black);"></span>
+      </div>
+      <div class="lbl">Primary pair</div>
+      <div class="sub">Lime · Magenta · Black</div>
+    </div>
+    <div class="pair" style="background: var(--brand-orange); color: var(--brand-black);">
+      <div class="dots">
+        <span class="dot" style="background:var(--brand-orange);"></span>
+        <span class="dot" style="background:var(--brand-purple);"></span>
+        <span class="dot" style="background:var(--brand-black);"></span>
+      </div>
+      <div class="lbl">Carnival pair</div>
+      <div class="sub">Orange · Purple · Black</div>
+    </div>
+    <div class="pair" style="background: var(--brand-cyan); color: var(--brand-black);">
+      <div class="dots">
+        <span class="dot" style="background:var(--brand-cyan);"></span>
+        <span class="dot" style="background:var(--brand-lime);"></span>
+        <span class="dot" style="background:var(--brand-black);"></span>
+      </div>
+      <div class="lbl">Sky pair</div>
+      <div class="sub">Cyan · Lime · Black</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 22px 24px; gap: 18px; align-items: stretch; background: #f6f6f4; }
+  .card {
+    flex: 1; background: #fff; padding: 18px 18px 16px; min-width: 0;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .card.outline { border: 2px solid var(--brand-black); }
+  .card.hard { box-shadow: 6px 6px 0 var(--brand-black); }
+  .card.lime { background: var(--brand-lime); color: var(--brand-black); }
+  .eb {
+    font-family: var(--font-body); font-weight: 700; font-size: 10px;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--fg-3);
+  }
+  .ti {
+    font-family: var(--font-headline);
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .meta { font-family: var(--font-body); font-size: 12px; color: var(--fg-3); }
+  .card.lime .eb { color: rgba(19,19,19,.7); }
+  .card.lime .meta { color: rgba(19,19,19,.7); }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="card outline">
+      <span class="eb">Outlined</span>
+      <span class="ti">10K Oficial</span>
+      <span class="meta">Domingo · 7h · 250 vagas</span>
+    </div>
+    <div class="card hard">
+      <span class="eb">Hard offset</span>
+      <span class="ti">Kit Premium</span>
+      <span class="meta">Camiseta + medalha + sacochila</span>
+    </div>
+    <div class="card lime">
+      <span class="eb">Filled</span>
+      <span class="ti">Inscreva-se</span>
+      <span class="meta">Até 10.10 · R$ 89,90</span>
+    </div>
+  </div>
+</body>
+</html>

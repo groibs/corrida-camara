@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 20px 24px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; width: 100%; }
+  .role { display: flex; flex-direction: column; gap: 8px; }
+  .role .swatch { height: 64px; border-radius: 8px; }
+  .role .name {
+    font-family: var(--font-body); font-weight: 700; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .08em;
+  }
+  .role .hex { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="row">
+      <div class="role"><span class="swatch" style="background:#2faa3c;"></span><span class="name">Success</span><span class="hex">#2FAA3C</span></div>
+      <div class="role"><span class="swatch" style="background:var(--brand-orange);"></span><span class="name">Warning</span><span class="hex">#F58A1F</span></div>
+      <div class="role"><span class="swatch" style="background:#d92020;"></span><span class="name">Danger</span><span class="hex">#D92020</span></div>
+      <div class="role"><span class="swatch" style="background:var(--brand-cyan);"></span><span class="name">Info</span><span class="hex">#22ACDD</span></div>
+    </div>
+  </div>
+</body>
+</html>

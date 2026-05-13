@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 18px 24px; flex-direction: column; align-items: flex-start; gap: 6px; }
+  .row { display: flex; align-items: baseline; gap: 14px; width: 100%; }
+  .row .name {
+    font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); width: 80px; flex-shrink: 0;
+  }
+  .row .spec { line-height: 1; }
+  .h1 { font-family: var(--font-headline); font-size: 36px; text-transform: uppercase; line-height: 1; }
+  .h2 { font-family: var(--font-headline); font-size: 26px; text-transform: uppercase; line-height: 1; }
+  .h3 { font-family: var(--font-body); font-weight: 700; font-size: 20px; line-height: 1.1; }
+  .body { font-family: var(--font-body); font-size: 16px; line-height: 1.2; }
+  .sm { font-family: var(--font-body); font-size: 13px; color: var(--fg-2); line-height: 1.2; }
+  .meta { font-family: var(--font-body); font-size: 11px; color: var(--fg-3); line-height: 1.2; }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="row"><span class="name">H1 / 72</span><span class="spec h1">Inscrições</span></div>
+    <div class="row"><span class="name">H2 / 48</span><span class="spec h2">Percurso oficial</span></div>
+    <div class="row"><span class="name">H3 / 24</span><span class="spec h3">Kit do corredor</span></div>
+    <div class="row"><span class="name">Body / 16</span><span class="spec body">Largada às 7h em frente à Câmara Municipal.</span></div>
+    <div class="row"><span class="name">Small / 13</span><span class="spec sm">Domingo, 12 de outubro · clima previsto: 22°C</span></div>
+    <div class="row"><span class="name">Meta / 11</span><span class="spec meta">Atualizado há 3 minutos</span></div>
+  </div>
+</body>
+</html>

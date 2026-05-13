@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .pc-card { padding: 20px 24px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; width: 100%; }
+  .role { display: flex; flex-direction: column; gap: 8px; }
+  .role .swatch {
+    height: 72px;
+    border: 1px solid var(--line-1);
+  }
+  .role .name {
+    font-family: var(--font-body); font-weight: 700; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .08em;
+  }
+  .role .hex { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); }
+</style>
+</head>
+<body>
+  <div class="pc-card">
+    <div class="row">
+      <div class="role"><span class="swatch" style="background:#ffffff;"></span><span class="name">bg-1 / surface</span><span class="hex">#FFFFFF</span></div>
+      <div class="role"><span class="swatch" style="background:#f6f6f4;"></span><span class="name">bg-2 / page</span><span class="hex">#F6F6F4</span></div>
+      <div class="role"><span class="swatch" style="background:#ececea;"></span><span class="name">bg-3 / fill</span><span class="hex">#ECECEA</span></div>
+      <div class="role"><span class="swatch" style="background:#131313;"></span><span class="name">bg-ink</span><span class="hex">#131313</span></div>
+    </div>
+  </div>
+</body>
+</html>
