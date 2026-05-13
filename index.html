@@ -1,486 +1,1782 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Corrida da Câmara – Checklist</title>
-  <meta property="og:title" content="Corrida da Câmara – Plano de ação"/>
-  <meta property="og:description" content="Checklist de redes sociais e equipe escalada para a Corrida da Câmara."/>
-  <meta property="og:image" content="https://corrida-camara.vercel.app/assets/preview-corrida-camara.svg"/>
-  <meta property="og:image:width" content="559"/>
-  <meta property="og:image:height" content="343"/>
-  <meta property="og:type" content="website"/>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{background:#060911;color:#E8EDF5;font-family:'Barlow',sans-serif;min-height:100vh}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.28}}
-    @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-    ::-webkit-scrollbar{width:5px}
-    ::-webkit-scrollbar-track{background:#0C1018}
-    ::-webkit-scrollbar-thumb{background:#252E3C;border-radius:99px}
-    button{font-family:inherit;cursor:pointer}
-  </style>
-</head>
-<body>
-<div id="root"></div>
-<script id="p3b64" type="text/plain">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAyMDAwLjk0IDMwOS41MyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNHcmFkaWVudGVfc2VtX25vbWVfMzEpOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogdXJsKCNHcmFkaWVudGVfc2VtX25vbWVfMzcpOwogICAgICB9CgogICAgICAuY2xzLTQgewogICAgICAgIGZpbGw6IHVybCgjR3JhZGllbnRlX3NlbV9ub21lXzU1KTsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmaWxsOiB1cmwoI0dyYWRpZW50ZV9zZW1fbm9tZV82KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iR3JhZGllbnRlX3NlbV9ub21lXzU1IiBkYXRhLW5hbWU9IkdyYWRpZW50ZSBzZW0gbm9tZSA1NSIgeDE9IjE3MS4wNSIgeTE9IjMyMi44NyIgeDI9IjIxLjEyIiB5Mj0iNjMuMTgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjN2ZiOTI3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjIyIiBzdG9wLWNvbG9yPSIjN2NiNjI3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjM4IiBzdG9wLWNvbG9yPSIjNzJiMDI4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjUyIiBzdG9wLWNvbG9yPSIjNjNhNDJhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjY1IiBzdG9wLWNvbG9yPSIjNGM5NDJjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjc2IiBzdG9wLWNvbG9yPSIjMzA3ZjMwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjgyIiBzdG9wLWNvbG9yPSIjMjA3MzMyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfNiIgZGF0YS1uYW1lPSJHcmFkaWVudGUgc2VtIG5vbWUgNiIgeDE9IjE1NS45OSIgeTE9Ijk2LjExIiB4Mj0iMzgxLjQ0IiB5Mj0iOTYuMTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDA5OWQ2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjIiIHN0b3AtY29sb3I9IiMwNDhmYzkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiMwZjc3YTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjE1Mzc3Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfMzciIGRhdGEtbmFtZT0iR3JhZGllbnRlIHNlbSBub21lIDM3IiB4MT0iMzgxLjQ0IiB5MT0iMjE3Ljg5IiB4Mj0iNjA2Ljg5IiB5Mj0iMjE3Ljg5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwOTE0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii4wNCIgc3RvcC1jb2xvcj0iIzBkOTU0MSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii4xNiIgc3RvcC1jb2xvcj0iIzMwYTAzOSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii4zIiBzdG9wLWNvbG9yPSIjNGNhOTMyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjQzIiBzdG9wLWNvbG9yPSIjNjNiMDJkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjU5IiBzdG9wLWNvbG9yPSIjNzJiNTI5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjc2IiBzdG9wLWNvbG9yPSIjN2NiODI3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdmYjkyNyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iR3JhZGllbnRlX3NlbV9ub21lXzMxIiBkYXRhLW5hbWU9IkdyYWRpZW50ZSBzZW0gbm9tZSAzMSIgY3g9IjM4MS40MyIgY3k9IjE1Ny40OSIgZng9IjM4MS40MyIgZnk9IjE1Ny40OSIgcj0iMTgxLjE5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2YyOTIyNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmQ1MTUiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTE0NS41MSw4NS43MWMwLTIzLjQ3LDE1LjIyLTQwLjc2LDM1Ljc5LTQwLjc2LDkuOTUsMCwxOC45MiwzLjg5LDI0Ljk3LDExLjY4bC00LjU4LDUuMzhjLTUuNTYtNi42NC0xMi4zOS05LjUtMjAuMTktOS41LTE2LjQ4LDAtMjguODcsMTQuMi0yOC44NywzMy4yMXMxMi4zOSwzMy4yMSwyOC44NywzMy4yMWM3LjgsMCwxNC42My0yLjg2LDIwLjE5LTkuNjJsNC41OCw1LjM4Yy02LjA1LDcuNzktMTUuMDIsMTEuNzktMjUuMDYsMTEuNzktMjAuNDgsMC0zNS43LTE3LjI5LTM1LjctNDAuNzZaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMjgyLjE1LDEwNC4zOGgtMzguMDRsLTguMTksMjEuNDFoLTcuNTFsMzEuMjEtODAuMTVoNy4xMmwzMS4yMSw4MC4xNWgtNy42MWwtOC4xOS0yMS40MVpNMTI3OS41Miw5Ny41MWwtMTYuMzktNDMuMDUtMTYuMzgsNDMuMDVoMzIuNzdaTTEyNTMuNTcsMzkuMTFoLTYuNDRsMTIuNTgtMTQuMmg3LjAybDEyLjU4LDE0LjJoLTYuNDRsLTkuNjYtOS41LTkuNjYsOS41WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTM5OS42Nyw0NS42NHY4MC4xNWgtNi45MlY2MS42N2wtMjYuODIsNTMuOTNoLTMuNDFsLTI2LjgyLTUzLjU5djYzLjc4aC02LjkyVjQ1LjY0aDUuOTVsMjkuNjUsNTkuNDMsMjkuMzYtNTkuNDNoNS45NVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE0ODQuMjMsMTA0LjM4aC0zOC4wNGwtOC4xOSwyMS40MWgtNy41MWwzMS4yMS04MC4xNWg3LjEybDMxLjIxLDgwLjE1aC03LjYxbC04LjE5LTIxLjQxWk0xNDgxLjYsOTcuNTFsLTE2LjM5LTQzLjA1LTE2LjM4LDQzLjA1aDMyLjc3WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTU3Ny40NywxMjUuNzlsLTE1LjYtMjUuNzZjLTEuNzYuMjMtMy41MS4zNC01LjQ2LjM0aC0xOC4zM3YyNS40MmgtNy4yMlY0NS42NGgyNS41NWMxNy4zNiwwLDI3Ljg5LDEwLjMxLDI3Ljg5LDI3LjQ4LDAsMTIuNi01LjY2LDIxLjQxLTE1LjYsMjUuMTlsMTYuNjgsMjcuNDhoLTcuOVpNMTU3Ny4wOCw3My4xMmMwLTEyLjgyLTcuMjItMjAuMTUtMjAuODctMjAuMTVoLTE4LjE0djQwLjE5aDE4LjE0YzEzLjY1LDAsMjAuODctNy40NCwyMC44Ny0yMC4wNFoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE2NjMuNjgsMTA0LjM4aC0zOC4wNGwtOC4xOSwyMS40MWgtNy41MWwzMS4yMS04MC4xNWg3LjEybDMxLjIxLDgwLjE1aC03LjYxbC04LjE5LTIxLjQxWk0xNjYxLjA1LDk3LjUxbC0xNi4zOS00My4wNS0xNi4zOCw0My4wNWgzMi43N1oiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE3NTUuMjYsNDUuNjRoMjcuOGMyMS44NSwwLDM2LjU3LDE2LjQ5LDM2LjU3LDQwLjA4cy0xNC43Myw0MC4wOC0zNi41Nyw0MC4wOGgtMjcuOFY0NS42NFpNMTc4Mi42NywxMTguNDZjMTguMTQsMCwyOS44NC0xMy41MSwyOS44NC0zMi43NXMtMTEuNy0zMi43NS0yOS44NC0zMi43NWgtMjAuMTl2NjUuNWgyMC4xOVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE4NDkuMjgsODUuNzFjMC0yMy4zNiwxNS4yMi00MC43NiwzNS44OS00MC43NnMzNS43OSwxNy4yOSwzNS43OSw0MC43Ni0xNS4zMSw0MC43Ni0zNS43OSw0MC43Ni0zNS44OS0xNy40LTM1Ljg5LTQwLjc2Wk0xOTEzLjc1LDg1LjcxYzAtMTkuMTItMTIuMTktMzMuMjEtMjguNTgtMzMuMjFzLTI4Ljc3LDE0LjA4LTI4Ljc3LDMzLjIxLDEyLjI5LDMzLjIxLDI4Ljc3LDMzLjIxLDI4LjU4LTE0LjA4LDI4LjU4LTMzLjIxWiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTk1MC4xMywxMTYuMDZsMi44My02LjUzYzQuODgsNS42MSwxMy41Niw5LjczLDIyLjUzLDkuNzMsMTIuNzgsMCwxOC4zMy02LjMsMTguMzMtMTQuMiwwLTIxLjk4LTQyLjAzLTguNDctNDIuMDMtMzguMTMsMC0xMS43OSw3LjgtMjEuOTgsMjUuMTYtMjEuOTgsNy43MSwwLDE1LjcsMi42MywyMS4xNiw3LjFsLTIuNDQsNi43NmMtNS44NS00LjQ3LTEyLjY4LTYuNjQtMTguNzMtNi42NC0xMi40OCwwLTE4LjA0LDYuNTMtMTguMDQsMTQuNTQsMCwyMS45OCw0Mi4wNCw4LjcsNDIuMDQsMzcuOSwwLDExLjc5LTgsMjEuODctMjUuNDYsMjEuODctMTAuMjQsMC0yMC4yOS00LjI0LTI1LjM2LTEwLjQyWiIvPgogIDwvZz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExNTEuNTYsMTc1LjcyaDI3LjhjMjEuODUsMCwzNi41NywxNi40OSwzNi41Nyw0MC4wOHMtMTQuNzMsNDAuMDgtMzYuNTcsNDAuMDhoLTI3Ljh2LTgwLjE1Wk0xMTc4Ljk2LDI0OC41NGMxOC4xNCwwLDI5Ljg0LTEzLjUxLDI5Ljg0LTMyLjc1cy0xMS43LTMyLjc1LTI5Ljg0LTMyLjc1aC0yMC4xOXY2NS41aDIwLjE5WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTI5OS45LDI0OC41NHY3LjMzaC00OC4yOHYtODAuMTVoNDYuODF2Ny4zM2gtMzkuNnYyOC41MWgzNS4zMXY3LjIxaC0zNS4zMXYyOS43N2g0MS4wNloiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEzODkuODIsMjAzLjJjMCwxNy4wNi0xMC41MywyNy4zNy0yNy44OSwyNy4zN2gtMTguMzR2MjUuMzFoLTcuMjJ2LTgwLjE1aDI1LjU1YzE3LjM2LDAsMjcuODksMTAuMzEsMjcuODksMjcuNDhaTTEzODIuNiwyMDMuMmMwLTEyLjgyLTcuMjItMjAuMTUtMjAuODctMjAuMTVoLTE4LjE0djQwLjA4aDE4LjE0YzEzLjY1LDAsMjAuODctNy4zMywyMC44Ny0xOS45MloiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE0MjQuODMsMjIxLjYzdi00NS45Mmg3LjIydjQ1LjU3YzAsMTkuMDEsNy42MSwyNy43MSwyMC44NywyNy43MXMyMC45Ny04LjcsMjAuOTctMjcuNzF2LTQ1LjU3aDcuMDJ2NDUuOTJjMCwyMy4wMi0xMC41MywzNC45Mi0yNy45OSwzNC45MnMtMjguMDktMTEuOTEtMjguMDktMzQuOTJaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNTM0LjA3LDE4My4wNGgtMjMuOTl2LTcuMzNoNTUuMnY3LjMzaC0yMy45OXY3Mi44M2gtNy4yMnYtNzIuODNaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNjM1LjY5LDIzNC40NmgtMzguMDRsLTguMTksMjEuNDFoLTcuNTFsMzEuMjEtODAuMTVoNy4xMmwzMS4yMSw4MC4xNWgtNy42MWwtOC4xOS0yMS40MVpNMTYzMy4wNiwyMjcuNTlsLTE2LjM5LTQzLjA1LTE2LjM4LDQzLjA1aDMyLjc3WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTY4Mi4zMSwxNzUuNzJoMjcuOGMyMS44NSwwLDM2LjU3LDE2LjQ5LDM2LjU3LDQwLjA4cy0xNC43Myw0MC4wOC0zNi41Nyw0MC4wOGgtMjcuOHYtODAuMTVaTTE3MDkuNzIsMjQ4LjU0YzE4LjE0LDAsMjkuODQtMTMuNTEsMjkuODQtMzIuNzVzLTExLjctMzIuNzUtMjkuODQtMzIuNzVoLTIwLjE5djY1LjVoMjAuMTlaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNzc2LjMzLDIxNS43OWMwLTIzLjM2LDE1LjIyLTQwLjc2LDM1Ljg5LTQwLjc2czM1Ljc5LDE3LjI5LDM1Ljc5LDQwLjc2LTE1LjMxLDQwLjc2LTM1Ljc5LDQwLjc2LTM1Ljg5LTE3LjQtMzUuODktNDAuNzZaTTE4NDAuOCwyMTUuNzljMC0xOS4xMi0xMi4xOS0zMy4yMS0yOC41OC0zMy4yMXMtMjguNzcsMTQuMDgtMjguNzcsMzMuMjEsMTIuMjksMzMuMjEsMjguNzcsMzMuMjEsMjguNTgtMTQuMDgsMjguNTgtMzMuMjFaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xODc3LjE3LDI0Ni4xNGwyLjgzLTYuNTNjNC44OCw1LjYxLDEzLjU2LDkuNzMsMjIuNTMsOS43MywxMi43OCwwLDE4LjMzLTYuMywxOC4zMy0xNC4yLDAtMjEuOTgtNDIuMDMtOC40Ny00Mi4wMy0zOC4xMywwLTExLjc5LDcuOC0yMS45OCwyNS4xNi0yMS45OCw3LjcxLDAsMTUuNywyLjYzLDIxLjE2LDcuMWwtMi40NCw2Ljc2Yy01Ljg1LTQuNDctMTIuNjgtNi42NC0xOC43My02LjY0LTEyLjQ4LDAtMTguMDQsNi41My0xOC4wNCwxNC41NCwwLDIxLjk4LDQyLjAzLDguNyw0Mi4wMywzNy45LDAsMTEuNzktOCwyMS44Ny0yNS40NSwyMS44Ny0xMC4yNCwwLTIwLjI5LTQuMjQtMjUuMzYtMTAuNDJaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzA0LjksMTY0LjhoLTM2LjcxbC03LjkxLDIwLjY2aC03LjI1bDMwLjEyLTc3LjM1aDYuODdsMzAuMTIsNzcuMzVoLTcuMzRsLTcuOTEtMjAuNjZaTTcwMi4zNiwxNTguMTdsLTE1LjgxLTQxLjU1LTE1LjgxLDQxLjU1aDMxLjYzWiIvPgogICAgPGc+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgxOS4wNywxMDguMTF2NzcuMzVoLTUuNzRsLTQyLjM2LTYyLjc2djYyLjc2aC02Ljk3di03Ny4zNWg1Ljc0bDQyLjQ1LDYyLjc2di02Mi43Nmg2Ljg3WiIvPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04NjIuOTIsMTQ2Ljc5YzAtMjIuNTQsMTQuNjgtMzkuMzQsMzQuNjQtMzkuMzRzMzQuNTQsMTYuNjksMzQuNTQsMzkuMzQtMTQuNzgsMzkuMzQtMzQuNTQsMzkuMzQtMzQuNjQtMTYuOC0zNC42NC0zOS4zNFpNOTI1LjE0LDE0Ni43OWMwLTE4LjQ1LTExLjc3LTMyLjA1LTI3LjU4LTMyLjA1cy0yNy43NywxMy41OS0yNy43NywzMi4wNSwxMS44NiwzMi4wNSwyNy43NywzMi4wNSwyNy41OC0xMy41OSwyNy41OC0zMi4wNVoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTY5LjY1LDE3Ni4wN2wyLjczLTYuM2M0LjcxLDUuNDEsMTMuMDgsOS4zOSwyMS43NCw5LjM5LDEyLjMzLDAsMTcuNy02LjA4LDE3LjctMTMuNywwLTIxLjIyLTQwLjU3LTguMTgtNDAuNTctMzYuOCwwLTExLjM4LDcuNTMtMjEuMjIsMjQuMjgtMjEuMjIsNy40NCwwLDE1LjE1LDIuNTQsMjAuNDMsNi44NWwtMi4zNSw2LjUyYy01LjY1LTQuMzEtMTIuMjQtNi40MS0xOC4wNy02LjQxLTEyLjA1LDAtMTcuNDEsNi4zLTE3LjQxLDE0LjAzLDAsMjEuMjIsNDAuNTcsOC40LDQwLjU3LDM2LjU4LDAsMTEuMzgtNy43MiwyMS4xMS0yNC41NywyMS4xMS05Ljg4LDAtMTkuNTgtNC4wOS0yNC40Ny0xMC4wNloiLz4KICAgIDwvZz4KICA8L2c+CiAgPHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxMDc2LjY3IiB3aWR0aD0iMi4xNyIgaGVpZ2h0PSIzMDkuNTMiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTEzMy4xMSwxMzAuOTdjNC4zOC03LjU0LDYuNi0xNS41Niw2LjYtMjMuODMsMC0xMC4wOS0zLjctMTguNTgtMTEuMy0yNS45NC03LjY5LTcuNDQtMTYuODgtMTEuMDYtMjguMTItMTEuMDYtMTEuODksMC0yMS40NCwzLjgxLTI5LjIzLDExLjYxLTcuODcsNy45Mi0xMi40NCwxOS41My0xMy41NiwzNC40N2wtLjY4LDguNkgxNy4wOGwuMjYtOS41N2MuNjgtMjQuNTIsOS4wNy00NS4wMSwyNC45NS02MC45LDE1Ljk0LTE1Ljk4LDM1Ljg3LTI0LjA4LDU5LjIxLTI0LjA4czQyLjM4LDcuNzEsNTYuOTEsMjIuODljOC4wNiw4LjQyLDEzLjkxLDE3Ljc3LDE3LjUsMjcuOTYtMTcuMTUsMjAuODEtMjcuNTUsNDcuNC0yNy43Nyw3Ni4zNy0uMDIuMzItLjAyLjY2LS4wMi45OCwwLDUuODkuNDIsMTEuNywxLjI0LDE3LjM3LTQuNzQsNS42OS0xMC4xNiwxMS44My0xNi4yNywxOC40NmwtNDEuNDcsNDQuNjRoODYuOTZjMTkuMTEsMjEuNjYsMzcuOTQsMzYuNDgsNjgsNDAuMzJIMGwxMDAuMzMtMTA4LjQyYzE2Ljg2LTE4LjA2LDI3Ljg4LTMxLjQ2LDMyLjc4LTM5Ljg3WiIvPgogICAgPGc+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTI3Ny43NiwzNS43MWMtMzcuODEsMC03MS42NCwxNy4zMS05NCw0NC40My0xNy4xNSwyMC44MS0yNy41NSw0Ny40LTI3Ljc3LDc2LjM3aDM2LjI5Yy41Mi00Ni42NywzOC42Ny04NC41MSw4NS40OC04NC41MXM4NC45NSwzNy44NCw4NS40Nyw4NC41MWguMTRjLjE4LTIzLjAxLDYuNzgtNDQuNTIsMTguMDgtNjIuODItMjEuNDgtMzQuNzctNTkuOTEtNTcuOTgtMTAzLjY5LTU3Ljk4WiIvPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik02MDYuODksMTU2LjUxaC0zNi4yOWMwLC4zMiwwLC42NiwwLC45OCwwLDQ3LjE0LTM4LjM1LDg1LjQ4LTg1LjQ4LDg1LjQ4cy04NS40OC0zOC4zNS04NS40OC04NS40OGMwLS4zMiwwLS42NiwwLS45OGgtLjE0YzAsLjMyLDAsLjY2LDAsLjk4LDAsMjMuMzctNi42Miw0NS4yMi0xOC4wOSw2My43OSwyMS40NiwzNC43Nyw1OS45MSw1Ny45OCwxMDMuNjksNTcuOTgsNjcuMTQsMCwxMjEuNzctNTQuNjMsMTIxLjc3LTEyMS43NywwLS4zMiwwLS42NiwwLS45OFoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNjA2Ljg5LDE1Ni41MWgtMzYuMjljLS41My00Ni42Ny0zOC42Ni04NC41MS04NS40Ny04NC41MXMtODQuOTUsMzcuODQtODUuNDcsODQuNTFoLS4xNGMwLC4zMiwwLC42NiwwLC45OCwwLDIzLjM3LTYuNjIsNDUuMjItMTguMDksNjMuNzktMjEuNDYsMzQuNzctNTkuOTEsNTcuOTgtMTAzLjY5LDU3Ljk4LTUuMjUsMC0xMC40Mi0uMzMtMTUuNDktLjk4LTMwLjA2LTMuODMtNTYuNzQtMTguNjYtNzUuODQtNDAuMzItMTUuMzMtMTcuMzctMjUuNzgtMzkuMTEtMjkuMjMtNjMuMS0uODEtNS42Ny0xLjI0LTExLjQ3LTEuMjQtMTcuMzcsMC0uMzIsMC0uNjYuMDItLjk4aDM2LjI5Yy0uMDIuMzItLjAyLjY2LS4wMi45OCwwLDQ3LjE0LDM4LjM3LDg1LjQ4LDg1LjUsODUuNDhzODUuNDgtMzguMzUsODUuNDgtODUuNDhjMC0uMzIsMC0uNjYsMC0uOThoLjE0Yy4xOC0yMy4wMSw2Ljc4LTQ0LjUyLDE4LjA4LTYyLjgyLDIxLjQ3LTM0Ljc3LDU5LjktNTcuOTgsMTAzLjY5LTU3Ljk4LDY2LjgyLDAsMTIxLjIzLDU0LjEsMTIxLjc2LDEyMC44WiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+</script>
-<script id="p2b64" type="text/plain">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCA3NDAuOTEgNjA3LjM0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI0dyYWRpZW50ZV9zZW1fbm9tZV8zMSk7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBmaWxsOiB1cmwoI0dyYWRpZW50ZV9zZW1fbm9tZV8zNyk7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsbDogdXJsKCNHcmFkaWVudGVfc2VtX25vbWVfNTUpOwogICAgICB9CgogICAgICAuY2xzLTUgewogICAgICAgIGZpbGw6IHVybCgjR3JhZGllbnRlX3NlbV9ub21lXzYpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfNTUiIGRhdGEtbmFtZT0iR3JhZGllbnRlIHNlbSBub21lIDU1IiB4MT0iMjA4LjgyIiB5MT0iMzU3LjIxIiB4Mj0iMjUuNzkiIHkyPSI0MC4xOSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM3ZmI5MjciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMjIiIHN0b3AtY29sb3I9IiM3Y2I2MjciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMzgiIHN0b3AtY29sb3I9IiM3MmIwMjgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTIiIHN0b3AtY29sb3I9IiM2M2E0MmEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNjUiIHN0b3AtY29sb3I9IiM0Yzk0MmMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNzYiIHN0b3AtY29sb3I9IiMzMDdmMzAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuODIiIHN0b3AtY29sb3I9IiMyMDczMzIiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9IkdyYWRpZW50ZV9zZW1fbm9tZV82IiBkYXRhLW5hbWU9IkdyYWRpZW50ZSBzZW0gbm9tZSA2IiB4MT0iMTkwLjQzIiB5MT0iODAuMzgiIHgyPSI0NjUuNjciIHkyPSI4MC4zOCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDk5ZDYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMiIgc3RvcC1jb2xvcj0iIzA0OGZjOSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iIzBmNzdhOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyMTUzNzciLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9IkdyYWRpZW50ZV9zZW1fbm9tZV8zNyIgZGF0YS1uYW1lPSJHcmFkaWVudGUgc2VtIG5vbWUgMzciIHgxPSI0NjUuNjciIHkxPSIyMjkuMDUiIHgyPSI3NDAuOTEiIHkyPSIyMjkuMDUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDA5MTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjA0IiBzdG9wLWNvbG9yPSIjMGQ5NTQxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjE2IiBzdG9wLWNvbG9yPSIjMzBhMDM5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjMiIHN0b3AtY29sb3I9IiM0Y2E5MzIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNDMiIHN0b3AtY29sb3I9IiM2M2IwMmQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTkiIHN0b3AtY29sb3I9IiM3MmI1MjkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNzYiIHN0b3AtY29sb3I9IiM3Y2I4MjciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2ZiOTI3Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfMzEiIGRhdGEtbmFtZT0iR3JhZGllbnRlIHNlbSBub21lIDMxIiBjeD0iNDY1LjY2IiBjeT0iMTU1LjMxIiBmeD0iNDY1LjY2IiBmeT0iMTU1LjMxIiByPSIyMjEuMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmMjkyMjYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZkNTE1Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExOS42NSwzODUuNDhoLTI0LjgzbC01LjM1LDEzLjk4aC00LjlsMjAuMzctNTIuMzJoNC42NWwyMC4zNyw1Mi4zMmgtNC45NmwtNS4zNS0xMy45OFpNMTE3LjkzLDM4MC45OWwtMTAuNy0yOC4xMS0xMC43LDI4LjExaDIxLjM5WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzAxLjk0LDM0Ny4xM3Y1Mi4zMmgtMy44OGwtMjguNjUtNDIuNDZ2NDIuNDZoLTQuNzF2LTUyLjMyaDMuODhsMjguNzEsNDIuNDZ2LTQyLjQ2aDQuNjVaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MzkuODUsMzczLjI5YzAtMTUuMjUsOS45My0yNi42MSwyMy40My0yNi42MXMyMy4zNywxMS4yOSwyMy4zNywyNi42MS05Ljk5LDI2LjYxLTIzLjM3LDI2LjYxLTIzLjQzLTExLjM2LTIzLjQzLTI2LjYxWk00ODEuOTQsMzczLjI5YzAtMTIuNDgtNy45Ni0yMS42OC0xOC42Ni0yMS42OHMtMTguNzgsOS4xOS0xOC43OCwyMS42OCw4LjAyLDIxLjY4LDE4Ljc4LDIxLjY4LDE4LjY2LTkuMTksMTguNjYtMjEuNjhaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MjAuMywzOTMuMWwxLjg1LTQuMjZjMy4xOCwzLjY2LDguODUsNi4zNSwxNC43MSw2LjM1LDguMzQsMCwxMS45Ny00LjExLDExLjk3LTkuMjcsMC0xNC4zNS0yNy40NC01LjUzLTI3LjQ0LTI0Ljg5LDAtNy43LDUuMDktMTQuMzUsMTYuNDMtMTQuMzUsNS4wMywwLDEwLjI1LDEuNzIsMTMuODIsNC42M2wtMS41OSw0LjQxYy0zLjgyLTIuOTEtOC4yOC00LjM0LTEyLjIyLTQuMzQtOC4xNSwwLTExLjc4LDQuMjYtMTEuNzgsOS40OSwwLDE0LjM1LDI3LjQ0LDUuNjgsMjcuNDQsMjQuNzQsMCw3LjctNS4yMiwxNC4yOC0xNi42MiwxNC4yOC02LjY4LDAtMTMuMjQtMi43Ny0xNi41NS02LjhaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy00IiBkPSJNMTYyLjUsMTIyLjk0YzUuMzUtOS4yMSw4LjA2LTE5LDguMDYtMjkuMDksMC0xMi4zMi00LjUxLTIyLjY4LTEzLjc5LTMxLjY3LTkuMzktOS4wOS0yMC42MS0xMy41MS0zNC4zMy0xMy41MS0xNC41MSwwLTI2LjE3LDQuNjUtMzUuNjgsMTQuMTgtOS42LDkuNjctMTUuMTgsMjMuODQtMTYuNTYsNDIuMDlsLS44MywxMC41SDIwLjg2bC4zMi0xMS42OWMuODMtMjkuOTMsMTEuMDgtNTQuOTUsMzAuNDYtNzQuMzVDNzEuMSw5Ljg5LDk1LjQzLDAsMTIzLjkyLDBzNTEuNzQsOS40MSw2OS40OCwyNy45NWM5Ljg0LDEwLjI4LDE2Ljk4LDIxLjcsMjEuMzYsMzQuMTQtMjAuOTQsMjUuNDEtMzMuNjMsNTcuODctMzMuOTEsOTMuMjQtLjAyLjQtLjAyLjgtLjAyLDEuMiwwLDcuMi41MiwxNC4yOCwxLjUxLDIxLjItNS43OCw2Ljk0LTEyLjQsMTQuNDQtMTkuODYsMjIuNTNsLTUwLjYyLDU0LjVoMTA2LjE3YzIzLjMyLDI2LjQ0LDQ2LjMxLDQ0LjU0LDgzLjAxLDQ5LjIySDBsMTIyLjQ5LTEzMi4zNmMyMC41OC0yMi4wNCwzNC4wNC0zOC40MSw0MC4wMS00OC42N1oiLz4KICAgIDxnPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik0zMzkuMDksNi42NWMtNDYuMTYsMC04Ny40NiwyMS4xMy0xMTQuNzUsNTQuMjQtMjAuOTQsMjUuNDEtMzMuNjMsNTcuODctMzMuOTEsOTMuMjRoNDQuM2MuNjMtNTYuOTgsNDcuMjEtMTAzLjE3LDEwNC4zNi0xMDMuMTdzMTAzLjcxLDQ2LjE5LDEwNC4zNSwxMDMuMTdoLjE3Yy4yMi0yOC4wOSw4LjI3LTU0LjM1LDIyLjA3LTc2LjY5LTI2LjIyLTQyLjQ1LTczLjE0LTcwLjc5LTEyNi41OC03MC43OVoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNzQwLjksMTU0LjEzaC00NC4zYy4wMS40LjAxLjguMDEsMS4yLDAsNTcuNTQtNDYuODIsMTA0LjM2LTEwNC4zNiwxMDQuMzZzLTEwNC4zNi00Ni44Mi0xMDQuMzYtMTA0LjM2YzAtLjQsMC0uOC4wMS0xLjJoLS4xN2MuMDEuNC4wMS44LjAxLDEuMiwwLDI4LjUzLTguMDgsNTUuMjEtMjIuMDgsNzcuODcsMjYuMiw0Mi40NSw3My4xNCw3MC43OSwxMjYuNTgsNzAuNzksODEuOTcsMCwxNDguNjYtNjYuNjksMTQ4LjY2LTE0OC42NiwwLS40LDAtLjgtLjAxLTEuMloiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNzQwLjksMTU0LjEyaC00NC4zYy0uNjUtNTYuOTgtNDcuMi0xMDMuMTctMTA0LjM1LTEwMy4xN3MtMTAzLjcxLDQ2LjE5LTEwNC4zNSwxMDMuMTdoLS4xN2MuMDEuNC4wMS44LjAxLDEuMiwwLDI4LjUzLTguMDgsNTUuMjEtMjIuMDgsNzcuODctMjYuMiw0Mi40NS03My4xNCw3MC43OS0xMjYuNTgsNzAuNzktNi40MSwwLTEyLjcyLS40MS0xOC45MS0xLjItMzYuNy00LjY4LTY5LjI3LTIyLjc4LTkyLjU5LTQ5LjIyLTE4LjcxLTIxLjItMzEuNDgtNDcuNzUtMzUuNjgtNzcuMDQtLjk5LTYuOTItMS41MS0xNC4wMS0xLjUxLTIxLjIsMC0uNCwwLS44LjAyLTEuMmg0NC4zYy0uMDIuNC0uMDIuOC0uMDIsMS4yLDAsNTcuNTQsNDYuODQsMTA0LjM2LDEwNC4zOCwxMDQuMzZzMTA0LjM2LTQ2LjgyLDEwNC4zNi0xMDQuMzZjMC0uNCwwLS44LS4wMS0xLjJoLjE3Yy4yMi0yOC4wOSw4LjI3LTU0LjM1LDIyLjA3LTc2LjY5LDI2LjIxLTQyLjQ1LDczLjEzLTcwLjc5LDEyNi41OC03MC43OSw4MS41NywwLDE0OCw2Ni4wNCwxNDguNjUsMTQ3LjQ3WiIvPgogICAgPC9nPgogIDwvZz4KICA8Zz4KICAgIDxnPgogICAgICA8Zz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05MC4xMSw1MTIuNzJjMC0xMy40MywxMC4wMi0yMy4yMywyMy41Mi0yMy4yMyw2Ljg1LDAsMTIuODEsMi40LDE2Ljg2LDcuMDdsLTQuMTIsNC4wOWMtMy40Mi0zLjctNy42MS01LjM5LTEyLjQ5LTUuMzktMTAuMDIsMC0xNy40Myw3LjQtMTcuNDMsMTcuNDZzNy40MiwxNy40NiwxNy40MywxNy40NmM0Ljg4LDAsOS4wNy0xLjc1LDEyLjQ5LTUuNDVsNC4xMiw0LjA5Yy00LjA2LDQuNjctMTAuMDIsNy4xNC0xNi45Myw3LjE0LTEzLjQ0LDAtMjMuNDYtOS44LTIzLjQ2LTIzLjIzWiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE3OS40Myw1MjQuMDhoLTIzLjU4bC00Ljg4LDExLjM2aC02LjUzbDIwLjEtNDUuNDNoNi4yOGwyMC4xNiw0NS40M2gtNi42NmwtNC44OC0xMS4zNlpNMTYxLjg3LDQ4Ni4zaC01LjUybDguNDMtOC40NGg1LjgzbDguNDMsOC40NGgtNS41MWwtNS44My01LTUuODMsNVpNMTc3LjIyLDUxOC44OGwtOS41Ny0yMi4yNi05LjU3LDIyLjI2aDE5LjE1WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI1MS4zOSw1MzUuNDNsLS4wNi0zMy4xLTE2LjA0LDI3LjU4aC0yLjkybC0xNi4wNC0yNy4zOXYzMi45aC02LjA5di00NS40M2g1LjJsMTguNTEsMzEuOTMsMTguMjYtMzEuOTNoNS4ybC4wNiw0NS40M2gtNi4wOVoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMTEuNzUsNTI0LjA4aC0yMy41OGwtNC44OCwxMS4zNmgtNi41M2wyMC4xLTQ1LjQzaDYuMjhsMjAuMTYsNDUuNDNoLTYuNjZsLTQuODgtMTEuMzZaTTMwOS41Myw1MTguODhsLTkuNTctMjIuMjYtOS41NywyMi4yNmgxOS4xNVoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNzIuMjMsNTM1LjQzbC05LjU3LTEzLjk1Yy0uODkuMDYtMS44NC4xMy0yLjc5LjEzaC0xMC45N3YxMy44MmgtNi4zNHYtNDUuNDNoMTcuMzFjMTEuNTQsMCwxOC41MSw1Ljk3LDE4LjUxLDE1Ljg0LDAsNy4wMS0zLjU1LDEyLjA3LTkuNzYsMTQuMzRsMTAuNTIsMTUuMjVoLTYuOTFaTTM3Mi4wNCw1MDUuODRjMC02LjQ5LTQuMjUtMTAuMTktMTIuMzYtMTAuMTloLTEwLjc4djIwLjQ0aDEwLjc4YzguMTEsMCwxMi4zNi0zLjc2LDEyLjM2LTEwLjI1WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQyOS42LDUyNC4wOGgtMjMuNThsLTQuODgsMTEuMzZoLTYuNTNsMjAuMS00NS40M2g2LjI4bDIwLjE2LDQ1LjQzaC02LjY2bC00Ljg4LTExLjM2Wk00MjcuMzgsNTE4Ljg4bC05LjU3LTIyLjI2LTkuNTcsMjIuMjZoMTkuMTVaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDkwLjE1LDQ5MGgxOC43YzE0LjI2LDAsMjMuOTYsOS4yMiwyMy45NiwyMi43MXMtOS43LDIyLjcxLTIzLjk2LDIyLjcxaC0xOC43di00NS40M1pNNTA4LjQ3LDUyOS43OWMxMC45NywwLDE4LTYuODgsMTgtMTcuMDdzLTcuMDQtMTcuMDctMTgtMTcuMDdoLTExLjk4djM0LjE0aDExLjk4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU1MS41OCw1MTIuNzJjMC0xMy4zLDEwLjAyLTIzLjIzLDIzLjY1LTIzLjIzczIzLjUyLDkuODYsMjMuNTIsMjMuMjMtMTAuMDIsMjMuMjMtMjMuNTIsMjMuMjMtMjMuNjUtOS45My0yMy42NS0yMy4yM1pNNTkyLjQxLDUxMi43MmMwLTEwLjA2LTcuMzUtMTcuNDYtMTcuMTgtMTcuNDZzLTE3LjMxLDcuNC0xNy4zMSwxNy40Niw3LjM1LDE3LjQ2LDE3LjMxLDE3LjQ2LDE3LjE4LTcuNCwxNy4xOC0xNy40NloiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MTcuMDcsNTMwLjI0bDIuMzUtNS4wNmMzLjMsMy4wNSw4Ljk0LDUuMjYsMTQuNjQsNS4yNiw3LjY3LDAsMTAuOTctMy4wNSwxMC45Ny03LjAxLDAtMTEuMS0yNi44OC00LjA5LTI2Ljg4LTIwLjk2LDAtNy4wMSw1LjMzLTEyLjk4LDE2Ljk5LTEyLjk4LDUuMiwwLDEwLjU5LDEuNDMsMTQuMjYsNC4wMmwtMi4wOSw1LjE5Yy0zLjg3LTIuNTMtOC4yNC0zLjctMTIuMTctMy43LTcuNTQsMC0xMC43OCwzLjI1LTEwLjc4LDcuMiwwLDExLjEsMjYuODgsNC4xNSwyNi44OCwyMC44MywwLDYuOTQtNS40NSwxMi45MS0xNy4xOCwxMi45MS02Ljc4LDAtMTMuNDQtMi4zNC0xNi45OS01LjcxWiIvPgogICAgICA8L2c+CiAgICAgIDxnPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExOC41NCw1NjEuMzloMTguN2MxNC4yNiwwLDIzLjk2LDkuMjIsMjMuOTYsMjIuNzFzLTkuNywyMi43MS0yMy45NiwyMi43MWgtMTguN3YtNDUuNDNaTTEzNi44Niw2MDEuMThjMTAuOTcsMCwxOC02Ljg4LDE4LTE3LjA3cy03LjA0LTE3LjA3LTE4LTE3LjA3aC0xMS45OHYzNC4xNGgxMS45OFoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yMTUuNzksNjAxLjE4djUuNjVoLTMyLjIxdi00NS40M2gzMS4zMnY1LjY1aC0yNC45OHYxMy45NWgyMi4yNXY1LjUyaC0yMi4yNXYxNC42N2gyNS44NloiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNzQuNTcsNTc3LjIzYzAsOS44Ni02Ljk4LDE1LjgzLTE4LjUxLDE1LjgzaC0xMC45N3YxMy43NmgtNi4zNHYtNDUuNDNoMTcuMzFjMTEuNTQsMCwxOC41MSw1Ljk3LDE4LjUxLDE1Ljg0Wk0yNjguMjMsNTc3LjIzYzAtNi40OS00LjI1LTEwLjE5LTEyLjM2LTEwLjE5aC0xMC43OHYyMC4zOGgxMC43OGM4LjExLDAsMTIuMzYtMy43LDEyLjM2LTEwLjE5WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI5Ni4zMSw1ODcuMjJ2LTI1LjgzaDYuMzR2MjUuNTdjMCwxMC4wNiw0LjUsMTQuNiwxMi40OSwxNC42czEyLjU1LTQuNTQsMTIuNTUtMTQuNnYtMjUuNTdoNi4xNXYyNS44M2MwLDEzLjE3LTcuMDQsMjAuMTItMTguNzYsMjAuMTJzLTE4Ljc3LTYuOTQtMTguNzctMjAuMTJaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzY3LjUxLDU2Ny4wNGgtMTUuMjF2LTUuNjVoMzYuNzF2NS42NWgtMTUuMjF2MzkuNzhoLTYuMjh2LTM5Ljc4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQzNC42NCw1OTUuNDdoLTIzLjU4bC00Ljg4LDExLjM2aC02LjUzbDIwLjEtNDUuNDNoNi4yOGwyMC4xNiw0NS40M2gtNi42NmwtNC44OC0xMS4zNlpNNDMyLjQyLDU5MC4yN2wtOS41Ny0yMi4yNi05LjU3LDIyLjI2aDE5LjE1WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ2NS4zOSw1NjEuMzloMTguN2MxNC4yNiwwLDIzLjk2LDkuMjIsMjMuOTYsMjIuNzFzLTkuNywyMi43MS0yMy45NiwyMi43MWgtMTguN3YtNDUuNDNaTTQ4My43MSw2MDEuMThjMTAuOTcsMCwxOC02Ljg4LDE4LTE3LjA3cy03LjA0LTE3LjA3LTE4LTE3LjA3aC0xMS45OHYzNC4xNGgxMS45OFoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01MjYuODIsNTg0LjExYzAtMTMuMywxMC4wMi0yMy4yMywyMy42NS0yMy4yM3MyMy41Miw5Ljg2LDIzLjUyLDIzLjIzLTEwLjAyLDIzLjIzLTIzLjUyLDIzLjIzLTIzLjY1LTkuOTMtMjMuNjUtMjMuMjNaTTU2Ny42NSw1ODQuMTFjMC0xMC4wNi03LjM1LTE3LjQ2LTE3LjE4LTE3LjQ2cy0xNy4zMSw3LjQtMTcuMzEsMTcuNDYsNy4zNSwxNy40NiwxNy4zMSwxNy40NiwxNy4xOC03LjQsMTcuMTgtMTcuNDZaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTkyLjI1LDYwMS42M2wyLjM1LTUuMDZjMy4zLDMuMDUsOC45NCw1LjI2LDE0LjY0LDUuMjYsNy42NywwLDEwLjk3LTMuMDUsMTAuOTctNy4wMSwwLTExLjEtMjYuODgtNC4wOS0yNi44OC0yMC45NiwwLTcuMDEsNS4zMy0xMi45OCwxNi45OS0xMi45OCw1LjIsMCwxMC41OSwxLjQzLDE0LjI2LDQuMDJsLTIuMDksNS4xOWMtMy44Ny0yLjUzLTguMjQtMy43LTEyLjE3LTMuNy03LjU0LDAtMTAuNzgsMy4yNS0xMC43OCw3LjIsMCwxMS4xLDI2Ljg4LDQuMTUsMjYuODgsMjAuODMsMCw2Ljk0LTUuNDUsMTIuOTEtMTcuMTgsMTIuOTEtNi43OCwwLTEzLjQ0LTIuMzQtMTYuOTktNS43MVoiLz4KICAgICAgPC9nPgogICAgPC9nPgogICAgPHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxNC4xNCIgeT0iNDM5LjM4IiB3aWR0aD0iNzEyLjYzIiBoZWlnaHQ9IjIuNDgiLz4KICA8L2c+Cjwvc3ZnPg==</script>
-<script type="text/babel">
-const{useState,useEffect,useCallback,useRef}=React;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Corrida da Câmara – Checklist</title>
+    <meta property="og:title" content="Corrida da Câmara – Plano de ação" />
+    <meta
+      property="og:description"
+      content="Checklist de redes sociais e equipe escalada para a Corrida da Câmara."
+    />
+    <meta
+      property="og:image"
+      content="https://corrida-camara.vercel.app/assets/preview-corrida-camara.svg"
+    />
+    <meta property="og:image:width" content="559" />
+    <meta property="og:image:height" content="343" />
+    <meta property="og:type" content="website" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;500;600;700;800&family=Big+Shoulders+Display:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+    <style>
+      :root {
+        --brand-lime: #a3ef15;
+        --brand-cyan: #22acdd;
+        --brand-orange: #f58a1f;
+        --brand-magenta: #e9118c;
+        --brand-purple: #5c2d90;
+        --brand-black: #131313;
+        --bg-page: #f6f6f4;
+        --bg-surface: #ffffff;
+        --bg-fill: #ececea;
+        --fg-1: #131313;
+        --fg-2: rgba(19, 19, 19, 0.74);
+        --fg-3: rgba(19, 19, 19, 0.58);
+        --line: rgba(19, 19, 19, 0.16);
+        --shadow-hard: 6px 6px 0 var(--brand-black);
+        --font-display:
+          "Big Shoulders Display", "Archivo Black", Impact, sans-serif;
+        --font-headline:
+          "Archivo Black", "Big Shoulders Display", system-ui, sans-serif;
+        --font-body:
+          "Barlow", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+        --ease-sport: cubic-bezier(0.2, 0.9, 0.25, 1);
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        min-height: 100vh;
+        background: var(--bg-page);
+        color: var(--fg-1);
+        font-family: var(--font-body);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        background:
+          radial-gradient(
+            circle at 15% 8%,
+            rgba(34, 172, 221, 0.28),
+            transparent 28rem
+          ),
+          radial-gradient(
+            circle at 85% 2%,
+            rgba(233, 17, 140, 0.18),
+            transparent 24rem
+          ),
+          linear-gradient(135deg, #fff 0%, #f6f6f4 42%, #ececea 100%);
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.18;
+        pointer-events: none;
+        background-image:
+          linear-gradient(
+            135deg,
+            transparent 0 42%,
+            var(--brand-lime) 42% 48%,
+            transparent 48% 100%
+          ),
+          linear-gradient(
+            45deg,
+            transparent 0 52%,
+            var(--brand-purple) 52% 56%,
+            transparent 56% 100%
+          );
+        background-size:
+          96px 96px,
+          132px 132px;
+        background-position: center;
+      }
+      button {
+        font-family: inherit;
+        cursor: pointer;
+      }
+      ::selection {
+        background: var(--brand-lime);
+        color: var(--brand-black);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-fill);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--brand-black);
+        border-radius: 999px;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.35;
+          transform: scale(0.72);
+        }
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .app-shell {
+        min-height: 100vh;
+        padding: 28px clamp(14px, 3vw, 36px);
+      }
+      .page-card {
+        max-width: 1320px;
+        margin: 0 auto;
+        background: var(--bg-surface);
+        border: 2px solid var(--brand-black);
+        box-shadow: var(--shadow-hard);
+        overflow: hidden;
+      }
+      .hero {
+        position: relative;
+        overflow: hidden;
+        background: var(--brand-cyan);
+        border-bottom: 2px solid var(--brand-black);
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.28;
+        background:
+          linear-gradient(
+            135deg,
+            transparent 0 50%,
+            var(--brand-lime) 50% 56%,
+            transparent 56%
+          ),
+          radial-gradient(
+            circle at 88% 18%,
+            var(--brand-magenta),
+            transparent 22rem
+          ),
+          radial-gradient(
+            circle at 6% 88%,
+            var(--brand-purple),
+            transparent 18rem
+          );
+      }
+      .topbar,
+      .hero-content,
+      .progress-block,
+      .sponsor-strip,
+      .section,
+      .footer {
+        position: relative;
+        z-index: 1;
+        padding-left: clamp(18px, 3vw, 42px);
+        padding-right: clamp(18px, 3vw, 42px);
+      }
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgba(19, 19, 19, 0.18);
+        background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(6px);
+      }
+      .brand-logo {
+        height: clamp(38px, 5vw, 58px);
+        width: auto;
+        filter: drop-shadow(2px 2px 0 rgba(19, 19, 19, 0.15));
+      }
+      .sync-pill {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #fff;
+        border: 2px solid var(--brand-black);
+        border-radius: 999px;
+        padding: 10px 12px 10px 14px;
+        box-shadow: 4px 4px 0 var(--brand-black);
+      }
+      .sync-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        flex-shrink: 0;
+        background: var(--sync-color);
+      }
+      .sync-dot.is-pulsing {
+        animation: pulse 1.1s ease-in-out infinite;
+        box-shadow: 0 0 0 5px
+          color-mix(in srgb, var(--sync-color) 18%, transparent);
+      }
+      .sync-label {
+        font-size: 0.78rem;
+        font-weight: 800;
+        color: var(--fg-1);
+        line-height: 1;
+      }
+      .sync-meta {
+        font-size: 0.62rem;
+        color: var(--fg-3);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-top: 3px;
+        font-weight: 700;
+      }
+      .sync-button {
+        border: 2px solid var(--brand-black);
+        background: var(--brand-lime);
+        color: var(--brand-black);
+        border-radius: 999px;
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 1;
+        transition:
+          transform 120ms var(--ease-sport),
+          box-shadow 120ms var(--ease-sport);
+        box-shadow: 3px 3px 0 var(--brand-black);
+      }
+      .sync-button:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 1px 1px 0 var(--brand-black);
+      }
+      .hero-content {
+        padding-top: clamp(34px, 6vw, 72px);
+        padding-bottom: clamp(36px, 6vw, 74px);
+      }
+      .eyebrow {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(19, 19, 19, 0.72);
+        margin-bottom: 10px;
+      }
+      .hero-title {
+        font-family: var(--font-display);
+        font-weight: 900;
+        font-size: clamp(4.5rem, 12vw, 10.5rem);
+        line-height: 0.78;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: var(--brand-black);
+        max-width: 880px;
+        text-wrap: balance;
+        text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.38);
+      }
+      .hero-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        background: #fff;
+        border: 2px solid var(--brand-black);
+        box-shadow: 4px 4px 0 var(--brand-black);
+        padding: 10px 16px;
+        border-radius: 999px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--brand-black);
+      }
+      .hero-kicker strong {
+        color: var(--brand-magenta);
+      }
+      .boot-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(246, 246, 244, 0.94);
+        z-index: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .boot-card {
+        text-align: center;
+        padding: 42px 56px;
+        background: #fff;
+        border: 2px solid var(--brand-black);
+        box-shadow: var(--shadow-hard);
+      }
+      .boot-icon {
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 14px;
+        animation: spin 1.1s linear infinite;
+        color: var(--brand-purple);
+      }
+      .boot-card p {
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--fg-2);
+      }
+      .progress-block {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        background: #fff;
+        border-bottom: 2px solid var(--brand-black);
+      }
+      .progress-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 18px;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .progress-title {
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.14em;
+        color: var(--fg-3);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .chips {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .chip {
+        border: 2px solid var(--brand-black);
+        border-radius: 999px;
+        padding: 5px 12px;
+        font-size: 0.78rem;
+        font-weight: 800;
+        background: #fff;
+        color: var(--fg-1);
+      }
+      .chip.done {
+        background: var(--brand-lime);
+      }
+      .chip.pending {
+        background: var(--bg-fill);
+      }
+      .chip.total {
+        background: var(--brand-orange);
+      }
+      .progress-number {
+        font-family: var(--font-display);
+        font-size: clamp(3.6rem, 8vw, 6.5rem);
+        font-weight: 900;
+        line-height: 0.8;
+        color: var(--progress-color);
+        letter-spacing: -0.04em;
+        text-shadow: 3px 3px 0 var(--brand-black);
+      }
+      .progress-number span {
+        font-size: 0.45em;
+        color: var(--brand-black);
+        text-shadow: none;
+      }
+      .progress-track {
+        height: 14px;
+        background: var(--bg-fill);
+        border: 2px solid var(--brand-black);
+        border-radius: 999px;
+        overflow: hidden;
+      }
+      .progress-fill {
+        height: 100%;
+        border-radius: 999px;
+        background: linear-gradient(
+          90deg,
+          var(--brand-cyan),
+          var(--progress-color)
+        );
+        transition: width 0.6s var(--ease-sport);
+      }
+      .sponsor-strip {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background: var(--brand-black);
+        color: #fff;
+        border-bottom: 2px solid var(--brand-black);
+        font-size: 0.86rem;
+        font-weight: 700;
+      }
+      .sponsor-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--brand-orange);
+        display: inline-block;
+      }
+      .sponsor-strip strong {
+        color: var(--brand-lime);
+      }
+      .section {
+        padding-top: 34px;
+        padding-bottom: 38px;
+        border-bottom: 2px solid var(--brand-black);
+        background: linear-gradient(180deg, #fff 0%, #fbfbfa 100%);
+      }
+      .section-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .section-title-wrap {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .section-mark {
+        width: 14px;
+        height: 54px;
+        background: var(--accent);
+        border: 2px solid var(--brand-black);
+        box-shadow: 4px 4px 0 var(--brand-black);
+        flex-shrink: 0;
+      }
+      .section-title {
+        font-family: var(--font-headline);
+        font-size: clamp(1.55rem, 3vw, 2.45rem);
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        color: var(--fg-1);
+      }
+      .section-meta {
+        font-size: 0.76rem;
+        color: var(--fg-3);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-top: 5px;
+        font-weight: 800;
+      }
+      .section-progress {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .mini-track {
+        height: 10px;
+        width: 150px;
+        background: var(--bg-fill);
+        border: 2px solid var(--brand-black);
+        border-radius: 999px;
+        overflow: hidden;
+      }
+      .mini-fill {
+        height: 100%;
+        background: var(--accent);
+        transition: width 0.5s var(--ease-sport);
+      }
+      .section-percent {
+        font-family: var(--font-display);
+        font-size: 2.1rem;
+        font-weight: 900;
+        color: var(--accent);
+        line-height: 1;
+        text-shadow: 2px 2px 0 var(--brand-black);
+        min-width: 58px;
+        text-align: right;
+      }
+      .platform-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+        gap: 18px;
+      }
+      .platform-card {
+        background: #fff;
+        border: 2px solid var(--brand-black);
+        box-shadow: 5px 5px 0 var(--brand-black);
+        padding: 17px;
+        transition:
+          transform 160ms var(--ease-sport),
+          box-shadow 160ms var(--ease-sport),
+          background 160ms var(--ease-sport);
+      }
+      .platform-card.is-complete {
+        background: color-mix(in srgb, var(--brand-lime) 20%, #fff);
+      }
+      .platform-card:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 3px 3px 0 var(--brand-black);
+      }
+      .platform-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 13px;
+      }
+      .platform-name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--fg-1);
+      }
+      .platform-title {
+        font-weight: 900;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+      .platform-handle {
+        font-size: 0.72rem;
+        color: var(--fg-3);
+        margin-top: 4px;
+        font-weight: 700;
+      }
+      .count-badge {
+        border: 2px solid var(--brand-black);
+        border-radius: 999px;
+        padding: 3px 10px;
+        color: var(--fg-1);
+        background: var(--badge-color);
+        font-weight: 900;
+        font-size: 0.82rem;
+        flex-shrink: 0;
+      }
+      .platform-track {
+        height: 8px;
+        background: var(--bg-fill);
+        border: 1.5px solid var(--brand-black);
+        border-radius: 999px;
+        margin-bottom: 13px;
+        overflow: hidden;
+      }
+      .platform-fill {
+        height: 100%;
+        border-radius: 999px;
+        background: var(--badge-color);
+        transition: width 0.4s var(--ease-sport);
+      }
+      .task-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .task-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 10px;
+        user-select: none;
+        transition: background 0.15s var(--ease-sport);
+      }
+      .task-item:hover {
+        background: var(--bg-fill);
+      }
+      .task-item.is-done .task-label {
+        color: var(--fg-3);
+        text-decoration: line-through;
+        text-decoration-thickness: 2px;
+      }
+      .checkbox {
+        width: 22px;
+        height: 22px;
+        border-radius: 7px;
+        flex-shrink: 0;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.16s var(--ease-sport);
+        background: #fff;
+        border: 2px solid var(--brand-black);
+        box-shadow: 2px 2px 0 var(--brand-black);
+      }
+      .checkbox.is-checked {
+        background: var(--brand-lime);
+      }
+      .task-label {
+        font-size: 0.9rem;
+        line-height: 1.35;
+        color: var(--fg-1);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+        font-weight: 600;
+      }
+      .mandatory {
+        font-size: 0.6rem;
+        letter-spacing: 0.1em;
+        background: var(--brand-orange);
+        color: var(--brand-black);
+        padding: 2px 7px;
+        border: 1.5px solid var(--brand-black);
+        border-radius: 999px;
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 1.1;
+        text-decoration: none;
+      }
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(218px, 1fr));
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+      .team-card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #fff;
+        border: 2px solid var(--brand-black);
+        box-shadow: 4px 4px 0 var(--brand-black);
+        padding: 12px;
+      }
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--brand-cyan),
+          var(--brand-lime)
+        );
+        border: 2px solid var(--brand-black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        color: var(--brand-black);
+        flex-shrink: 0;
+      }
+      .member-name {
+        font-weight: 900;
+        font-size: 1rem;
+        color: var(--fg-1);
+      }
+      .member-role {
+        font-size: 0.76rem;
+        color: var(--fg-3);
+        margin-top: 2px;
+        line-height: 1.25;
+        font-weight: 600;
+      }
+      .runners {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 9px;
+        padding: 14px 16px;
+        background: var(--brand-lime);
+        border: 2px solid var(--brand-black);
+        box-shadow: 4px 4px 0 var(--brand-black);
+      }
+      .runners-label {
+        font-weight: 900;
+        font-size: 0.92rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-right: 4px;
+        color: var(--brand-black);
+      }
+      .runner-chip {
+        background: #fff;
+        border: 2px solid var(--brand-black);
+        padding: 4px 11px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        color: var(--fg-1);
+        font-weight: 800;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: var(--brand-black);
+        color: #fff;
+      }
+      .footer img {
+        height: 30px;
+        width: auto;
+        filter: grayscale(1) brightness(4);
+        opacity: 0.95;
+      }
+      .footer span {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        color: var(--brand-lime);
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+      @media (max-width: 720px) {
+        .app-shell {
+          padding: 0;
+        }
+        .page-card {
+          border-left: 0;
+          border-right: 0;
+          box-shadow: none;
+        }
+        .sync-pill {
+          width: 100%;
+          border-radius: 18px;
+        }
+        .hero-title {
+          font-size: clamp(4rem, 22vw, 6.2rem);
+        }
+        .hero-kicker {
+          border-radius: 16px;
+          align-items: flex-start;
+        }
+        .progress-head {
+          align-items: flex-start;
+        }
+        .progress-number {
+          text-shadow: 2px 2px 0 var(--brand-black);
+        }
+        .section-head {
+          align-items: flex-start;
+        }
+        .section-progress {
+          width: 100%;
+        }
+        .mini-track {
+          flex: 1;
+        }
+        .platform-grid {
+          grid-template-columns: 1fr;
+        }
+        .topbar,
+        .hero-content,
+        .progress-block,
+        .sponsor-strip,
+        .section,
+        .footer {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script id="p3b64" type="text/plain">
+      PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAyMDAwLjk0IDMwOS41MyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNHcmFkaWVudGVfc2VtX25vbWVfMzEpOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogdXJsKCNHcmFkaWVudGVfc2VtX25vbWVfMzcpOwogICAgICB9CgogICAgICAuY2xzLTQgewogICAgICAgIGZpbGw6IHVybCgjR3JhZGllbnRlX3NlbV9ub21lXzU1KTsKICAgICAgfQoKICAgICAgLmNscy01IHsKICAgICAgICBmaWxsOiB1cmwoI0dyYWRpZW50ZV9zZW1fbm9tZV82KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iR3JhZGllbnRlX3NlbV9ub21lXzU1IiBkYXRhLW5hbWU9IkdyYWRpZW50ZSBzZW0gbm9tZSA1NSIgeDE9IjE3MS4wNSIgeTE9IjMyMi44NyIgeDI9IjIxLjEyIiB5Mj0iNjMuMTgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjN2ZiOTI3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjIyIiBzdG9wLWNvbG9yPSIjN2NiNjI3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjM4IiBzdG9wLWNvbG9yPSIjNzJiMDI4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjUyIiBzdG9wLWNvbG9yPSIjNjNhNDJhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjY1IiBzdG9wLWNvbG9yPSIjNGM5NDJjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjc2IiBzdG9wLWNvbG9yPSIjMzA3ZjMwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjgyIiBzdG9wLWNvbG9yPSIjMjA3MzMyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfNiIgZGF0YS1uYW1lPSJHcmFkaWVudGUgc2VtIG5vbWUgNiIgeDE9IjE1NS45OSIgeTE9Ijk2LjExIiB4Mj0iMzgxLjQ0IiB5Mj0iOTYuMTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDA5OWQ2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjIiIHN0b3AtY29sb3I9IiMwNDhmYzkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiMwZjc3YTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjE1Mzc3Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfMzciIGRhdGEtbmFtZT0iR3JhZGllbnRlIHNlbSBub21lIDM3IiB4MT0iMzgxLjQ0IiB5MT0iMjE3Ljg5IiB4Mj0iNjA2Ljg5IiB5Mj0iMjE3Ljg5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwOTE0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii4wNCIgc3RvcC1jb2xvcj0iIzBkOTU0MSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii4xNiIgc3RvcC1jb2xvcj0iIzMwYTAzOSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii4zIiBzdG9wLWNvbG9yPSIjNGNhOTMyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjQzIiBzdG9wLWNvbG9yPSIjNjNiMDJkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjU5IiBzdG9wLWNvbG9yPSIjNzJiNTI5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjc2IiBzdG9wLWNvbG9yPSIjN2NiODI3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdmYjkyNyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iR3JhZGllbnRlX3NlbV9ub21lXzMxIiBkYXRhLW5hbWU9IkdyYWRpZW50ZSBzZW0gbm9tZSAzMSIgY3g9IjM4MS40MyIgY3k9IjE1Ny40OSIgZng9IjM4MS40MyIgZnk9IjE1Ny40OSIgcj0iMTgxLjE5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2YyOTIyNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmQ1MTUiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTE0NS41MSw4NS43MWMwLTIzLjQ3LDE1LjIyLTQwLjc2LDM1Ljc5LTQwLjc2LDkuOTUsMCwxOC45MiwzLjg5LDI0Ljk3LDExLjY4bC00LjU4LDUuMzhjLTUuNTYtNi42NC0xMi4zOS05LjUtMjAuMTktOS41LTE2LjQ4LDAtMjguODcsMTQuMi0yOC44NywzMy4yMXMxMi4zOSwzMy4yMSwyOC44NywzMy4yMWM3LjgsMCwxNC42My0yLjg2LDIwLjE5LTkuNjJsNC41OCw1LjM4Yy02LjA1LDcuNzktMTUuMDIsMTEuNzktMjUuMDYsMTEuNzktMjAuNDgsMC0zNS43LTE3LjI5LTM1LjctNDAuNzZaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMjgyLjE1LDEwNC4zOGgtMzguMDRsLTguMTksMjEuNDFoLTcuNTFsMzEuMjEtODAuMTVoNy4xMmwzMS4yMSw4MC4xNWgtNy42MWwtOC4xOS0yMS40MVpNMTI3OS41Miw5Ny41MWwtMTYuMzktNDMuMDUtMTYuMzgsNDMuMDVoMzIuNzdaTTEyNTMuNTcsMzkuMTFoLTYuNDRsMTIuNTgtMTQuMmg3LjAybDEyLjU4LDE0LjJoLTYuNDRsLTkuNjYtOS41LTkuNjYsOS41WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTM5OS42Nyw0NS42NHY4MC4xNWgtNi45MlY2MS42N2wtMjYuODIsNTMuOTNoLTMuNDFsLTI2LjgyLTUzLjU5djYzLjc4aC02LjkyVjQ1LjY0aDUuOTVsMjkuNjUsNTkuNDMsMjkuMzYtNTkuNDNoNS45NVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE0ODQuMjMsMTA0LjM4aC0zOC4wNGwtOC4xOSwyMS40MWgtNy41MWwzMS4yMS04MC4xNWg3LjEybDMxLjIxLDgwLjE1aC03LjYxbC04LjE5LTIxLjQxWk0xNDgxLjYsOTcuNTFsLTE2LjM5LTQzLjA1LTE2LjM4LDQzLjA1aDMyLjc3WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTU3Ny40NywxMjUuNzlsLTE1LjYtMjUuNzZjLTEuNzYuMjMtMy41MS4zNC01LjQ2LjM0aC0xOC4zM3YyNS40MmgtNy4yMlY0NS42NGgyNS41NWMxNy4zNiwwLDI3Ljg5LDEwLjMxLDI3Ljg5LDI3LjQ4LDAsMTIuNi01LjY2LDIxLjQxLTE1LjYsMjUuMTlsMTYuNjgsMjcuNDhoLTcuOVpNMTU3Ny4wOCw3My4xMmMwLTEyLjgyLTcuMjItMjAuMTUtMjAuODctMjAuMTVoLTE4LjE0djQwLjE5aDE4LjE0YzEzLjY1LDAsMjAuODctNy40NCwyMC44Ny0yMC4wNFoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE2NjMuNjgsMTA0LjM4aC0zOC4wNGwtOC4xOSwyMS40MWgtNy41MWwzMS4yMS04MC4xNWg3LjEybDMxLjIxLDgwLjE1aC03LjYxbC04LjE5LTIxLjQxWk0xNjYxLjA1LDk3LjUxbC0xNi4zOS00My4wNS0xNi4zOCw0My4wNWgzMi43N1oiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE3NTUuMjYsNDUuNjRoMjcuOGMyMS44NSwwLDM2LjU3LDE2LjQ5LDM2LjU3LDQwLjA4cy0xNC43Myw0MC4wOC0zNi41Nyw0MC4wOGgtMjcuOFY0NS42NFpNMTc4Mi42NywxMTguNDZjMTguMTQsMCwyOS44NC0xMy41MSwyOS44NC0zMi43NXMtMTEuNy0zMi43NS0yOS44NC0zMi43NWgtMjAuMTl2NjUuNWgyMC4xOVoiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE4NDkuMjgsODUuNzFjMC0yMy4zNiwxNS4yMi00MC43NiwzNS44OS00MC43NnMzNS43OSwxNy4yOSwzNS43OSw0MC43Ni0xNS4zMSw0MC43Ni0zNS43OSw0MC43Ni0zNS44OS0xNy40LTM1Ljg5LTQwLjc2Wk0xOTEzLjc1LDg1LjcxYzAtMTkuMTItMTIuMTktMzMuMjEtMjguNTgtMzMuMjFzLTI4Ljc3LDE0LjA4LTI4Ljc3LDMzLjIxLDEyLjI5LDMzLjIxLDI4Ljc3LDMzLjIxLDI4LjU4LTE0LjA4LDI4LjU4LTMzLjIxWiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTk1MC4xMywxMTYuMDZsMi44My02LjUzYzQuODgsNS42MSwxMy41Niw5LjczLDIyLjUzLDkuNzMsMTIuNzgsMCwxOC4zMy02LjMsMTguMzMtMTQuMiwwLTIxLjk4LTQyLjAzLTguNDctNDIuMDMtMzguMTMsMC0xMS43OSw3LjgtMjEuOTgsMjUuMTYtMjEuOTgsNy43MSwwLDE1LjcsMi42MywyMS4xNiw3LjFsLTIuNDQsNi43NmMtNS44NS00LjQ3LTEyLjY4LTYuNjQtMTguNzMtNi42NC0xMi40OCwwLTE4LjA0LDYuNTMtMTguMDQsMTQuNTQsMCwyMS45OCw0Mi4wNCw4LjcsNDIuMDQsMzcuOSwwLDExLjc5LTgsMjEuODctMjUuNDYsMjEuODctMTAuMjQsMC0yMC4yOS00LjI0LTI1LjM2LTEwLjQyWiIvPgogIDwvZz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExNTEuNTYsMTc1LjcyaDI3LjhjMjEuODUsMCwzNi41NywxNi40OSwzNi41Nyw0MC4wOHMtMTQuNzMsNDAuMDgtMzYuNTcsNDAuMDhoLTI3Ljh2LTgwLjE1Wk0xMTc4Ljk2LDI0OC41NGMxOC4xNCwwLDI5Ljg0LTEzLjUxLDI5Ljg0LTMyLjc1cy0xMS43LTMyLjc1LTI5Ljg0LTMyLjc1aC0yMC4xOXY2NS41aDIwLjE5WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTI5OS45LDI0OC41NHY3LjMzaC00OC4yOHYtODAuMTVoNDYuODF2Ny4zM2gtMzkuNnYyOC41MWgzNS4zMXY3LjIxaC0zNS4zMXYyOS43N2g0MS4wNloiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEzODkuODIsMjAzLjJjMCwxNy4wNi0xMC41MywyNy4zNy0yNy44OSwyNy4zN2gtMTguMzR2MjUuMzFoLTcuMjJ2LTgwLjE1aDI1LjU1YzE3LjM2LDAsMjcuODksMTAuMzEsMjcuODksMjcuNDhaTTEzODIuNiwyMDMuMmMwLTEyLjgyLTcuMjItMjAuMTUtMjAuODctMjAuMTVoLTE4LjE0djQwLjA4aDE4LjE0YzEzLjY1LDAsMjAuODctNy4zMywyMC44Ny0xOS45MloiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE0MjQuODMsMjIxLjYzdi00NS45Mmg3LjIydjQ1LjU3YzAsMTkuMDEsNy42MSwyNy43MSwyMC44NywyNy43MXMyMC45Ny04LjcsMjAuOTctMjcuNzF2LTQ1LjU3aDcuMDJ2NDUuOTJjMCwyMy4wMi0xMC41MywzNC45Mi0yNy45OSwzNC45MnMtMjguMDktMTEuOTEtMjguMDktMzQuOTJaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNTM0LjA3LDE4My4wNGgtMjMuOTl2LTcuMzNoNTUuMnY3LjMzaC0yMy45OXY3Mi44M2gtNy4yMnYtNzIuODNaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNjM1LjY5LDIzNC40NmgtMzguMDRsLTguMTksMjEuNDFoLTcuNTFsMzEuMjEtODAuMTVoNy4xMmwzMS4yMSw4MC4xNWgtNy42MWwtOC4xOS0yMS40MVpNMTYzMy4wNiwyMjcuNTlsLTE2LjM5LTQzLjA1LTE2LjM4LDQzLjA1aDMyLjc3WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTY4Mi4zMSwxNzUuNzJoMjcuOGMyMS44NSwwLDM2LjU3LDE2LjQ5LDM2LjU3LDQwLjA4cy0xNC43Myw0MC4wOC0zNi41Nyw0MC4wOGgtMjcuOHYtODAuMTVaTTE3MDkuNzIsMjQ4LjU0YzE4LjE0LDAsMjkuODQtMTMuNTEsMjkuODQtMzIuNzVzLTExLjctMzIuNzUtMjkuODQtMzIuNzVoLTIwLjE5djY1LjVoMjAuMTlaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNzc2LjMzLDIxNS43OWMwLTIzLjM2LDE1LjIyLTQwLjc2LDM1Ljg5LTQwLjc2czM1Ljc5LDE3LjI5LDM1Ljc5LDQwLjc2LTE1LjMxLDQwLjc2LTM1Ljc5LDQwLjc2LTM1Ljg5LTE3LjQtMzUuODktNDAuNzZaTTE4NDAuOCwyMTUuNzljMC0xOS4xMi0xMi4xOS0zMy4yMS0yOC41OC0zMy4yMXMtMjguNzcsMTQuMDgtMjguNzcsMzMuMjEsMTIuMjksMzMuMjEsMjguNzcsMzMuMjEsMjguNTgtMTQuMDgsMjguNTgtMzMuMjFaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xODc3LjE3LDI0Ni4xNGwyLjgzLTYuNTNjNC44OCw1LjYxLDEzLjU2LDkuNzMsMjIuNTMsOS43MywxMi43OCwwLDE4LjMzLTYuMywxOC4zMy0xNC4yLDAtMjEuOTgtNDIuMDMtOC40Ny00Mi4wMy0zOC4xMywwLTExLjc5LDcuOC0yMS45OCwyNS4xNi0yMS45OCw3LjcxLDAsMTUuNywyLjYzLDIxLjE2LDcuMWwtMi40NCw2Ljc2Yy01Ljg1LTQuNDctMTIuNjgtNi42NC0xOC43My02LjY0LTEyLjQ4LDAtMTguMDQsNi41My0xOC4wNCwxNC41NCwwLDIxLjk4LDQyLjAzLDguNyw0Mi4wMywzNy45LDAsMTEuNzktOCwyMS44Ny0yNS40NSwyMS44Ny0xMC4yNCwwLTIwLjI5LTQuMjQtMjUuMzYtMTAuNDJaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzA0LjksMTY0LjhoLTM2LjcxbC03LjkxLDIwLjY2aC03LjI1bDMwLjEyLTc3LjM1aDYuODdsMzAuMTIsNzcuMzVoLTcuMzRsLTcuOTEtMjAuNjZaTTcwMi4zNiwxNTguMTdsLTE1LjgxLTQxLjU1LTE1LjgxLDQxLjU1aDMxLjYzWiIvPgogICAgPGc+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTgxOS4wNywxMDguMTF2NzcuMzVoLTUuNzRsLTQyLjM2LTYyLjc2djYyLjc2aC02Ljk3di03Ny4zNWg1Ljc0bDQyLjQ1LDYyLjc2di02Mi43Nmg2Ljg3WiIvPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04NjIuOTIsMTQ2Ljc5YzAtMjIuNTQsMTQuNjgtMzkuMzQsMzQuNjQtMzkuMzRzMzQuNTQsMTYuNjksMzQuNTQsMzkuMzQtMTQuNzgsMzkuMzQtMzQuNTQsMzkuMzQtMzQuNjQtMTYuOC0zNC42NC0zOS4zNFpNOTI1LjE0LDE0Ni43OWMwLTE4LjQ1LTExLjc3LTMyLjA1LTI3LjU4LTMyLjA1cy0yNy43NywxMy41OS0yNy43NywzMi4wNSwxMS44NiwzMi4wNSwyNy43NywzMi4wNSwyNy41OC0xMy41OSwyNy41OC0zMi4wNVoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTY5LjY1LDE3Ni4wN2wyLjczLTYuM2M0LjcxLDUuNDEsMTMuMDgsOS4zOSwyMS43NCw5LjM5LDEyLjMzLDAsMTcuNy02LjA4LDE3LjctMTMuNywwLTIxLjIyLTQwLjU3LTguMTgtNDAuNTctMzYuOCwwLTExLjM4LDcuNTMtMjEuMjIsMjQuMjgtMjEuMjIsNy40NCwwLDE1LjE1LDIuNTQsMjAuNDMsNi44NWwtMi4zNSw2LjUyYy01LjY1LTQuMzEtMTIuMjQtNi40MS0xOC4wNy02LjQxLTEyLjA1LDAtMTcuNDEsNi4zLTE3LjQxLDE0LjAzLDAsMjEuMjIsNDAuNTcsOC40LDQwLjU3LDM2LjU4LDAsMTEuMzgtNy43MiwyMS4xMS0yNC41NywyMS4xMS05Ljg4LDAtMTkuNTgtNC4wOS0yNC40Ny0xMC4wNloiLz4KICAgIDwvZz4KICA8L2c+CiAgPHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxMDc2LjY3IiB3aWR0aD0iMi4xNyIgaGVpZ2h0PSIzMDkuNTMiLz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTEzMy4xMSwxMzAuOTdjNC4zOC03LjU0LDYuNi0xNS41Niw2LjYtMjMuODMsMC0xMC4wOS0zLjctMTguNTgtMTEuMy0yNS45NC03LjY5LTcuNDQtMTYuODgtMTEuMDYtMjguMTItMTEuMDYtMTEuODksMC0yMS40NCwzLjgxLTI5LjIzLDExLjYxLTcuODcsNy45Mi0xMi40NCwxOS41My0xMy41NiwzNC40N2wtLjY4LDguNkgxNy4wOGwuMjYtOS41N2MuNjgtMjQuNTIsOS4wNy00NS4wMSwyNC45NS02MC45LDE1Ljk0LTE1Ljk4LDM1Ljg3LTI0LjA4LDU5LjIxLTI0LjA4czQyLjM4LDcuNzEsNTYuOTEsMjIuODljOC4wNiw4LjQyLDEzLjkxLDE3Ljc3LDE3LjUsMjcuOTYtMTcuMTUsMjAuODEtMjcuNTUsNDcuNC0yNy43Nyw3Ni4zNy0uMDIuMzItLjAyLjY2LS4wMi45OCwwLDUuODkuNDIsMTEuNywxLjI0LDE3LjM3LTQuNzQsNS42OS0xMC4xNiwxMS44My0xNi4yNywxOC40NmwtNDEuNDcsNDQuNjRoODYuOTZjMTkuMTEsMjEuNjYsMzcuOTQsMzYuNDgsNjgsNDAuMzJIMGwxMDAuMzMtMTA4LjQyYzE2Ljg2LTE4LjA2LDI3Ljg4LTMxLjQ2LDMyLjc4LTM5Ljg3WiIvPgogICAgPGc+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTI3Ny43NiwzNS43MWMtMzcuODEsMC03MS42NCwxNy4zMS05NCw0NC40My0xNy4xNSwyMC44MS0yNy41NSw0Ny40LTI3Ljc3LDc2LjM3aDM2LjI5Yy41Mi00Ni42NywzOC42Ny04NC41MSw4NS40OC04NC41MXM4NC45NSwzNy44NCw4NS40Nyw4NC41MWguMTRjLjE4LTIzLjAxLDYuNzgtNDQuNTIsMTguMDgtNjIuODItMjEuNDgtMzQuNzctNTkuOTEtNTcuOTgtMTAzLjY5LTU3Ljk4WiIvPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik02MDYuODksMTU2LjUxaC0zNi4yOWMwLC4zMiwwLC42NiwwLC45OCwwLDQ3LjE0LTM4LjM1LDg1LjQ4LTg1LjQ4LDg1LjQ4cy04NS40OC0zOC4zNS04NS40OC04NS40OGMwLS4zMiwwLS42NiwwLS45OGgtLjE0YzAsLjMyLDAsLjY2LDAsLjk4LDAsMjMuMzctNi42Miw0NS4yMi0xOC4wOSw2My43OSwyMS40NiwzNC43Nyw1OS45MSw1Ny45OCwxMDMuNjksNTcuOTgsNjcuMTQsMCwxMjEuNzctNTQuNjMsMTIxLjc3LTEyMS43NywwLS4zMiwwLS42NiwwLS45OFoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNjA2Ljg5LDE1Ni41MWgtMzYuMjljLS41My00Ni42Ny0zOC42Ni04NC41MS04NS40Ny04NC41MXMtODQuOTUsMzcuODQtODUuNDcsODQuNTFoLS4xNGMwLC4zMiwwLC42NiwwLC45OCwwLDIzLjM3LTYuNjIsNDUuMjItMTguMDksNjMuNzktMjEuNDYsMzQuNzctNTkuOTEsNTcuOTgtMTAzLjY5LDU3Ljk4LTUuMjUsMC0xMC40Mi0uMzMtMTUuNDktLjk4LTMwLjA2LTMuODMtNTYuNzQtMTguNjYtNzUuODQtNDAuMzItMTUuMzMtMTcuMzctMjUuNzgtMzkuMTEtMjkuMjMtNjMuMS0uODEtNS42Ny0xLjI0LTExLjQ3LTEuMjQtMTcuMzcsMC0uMzIsMC0uNjYuMDItLjk4aDM2LjI5Yy0uMDIuMzItLjAyLjY2LS4wMi45OCwwLDQ3LjE0LDM4LjM3LDg1LjQ4LDg1LjUsODUuNDhzODUuNDgtMzguMzUsODUuNDgtODUuNDhjMC0uMzIsMC0uNjYsMC0uOThoLjE0Yy4xOC0yMy4wMSw2Ljc4LTQ0LjUyLDE4LjA4LTYyLjgyLDIxLjQ3LTM0Ljc3LDU5LjktNTcuOTgsMTAzLjY5LTU3Ljk4LDY2LjgyLDAsMTIxLjIzLDU0LjEsMTIxLjc2LDEyMC44WiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+
+    </script>
+    <script id="p2b64" type="text/plain">
+      PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCA3NDAuOTEgNjA3LjM0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI0dyYWRpZW50ZV9zZW1fbm9tZV8zMSk7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBmaWxsOiB1cmwoI0dyYWRpZW50ZV9zZW1fbm9tZV8zNyk7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsbDogdXJsKCNHcmFkaWVudGVfc2VtX25vbWVfNTUpOwogICAgICB9CgogICAgICAuY2xzLTUgewogICAgICAgIGZpbGw6IHVybCgjR3JhZGllbnRlX3NlbV9ub21lXzYpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfNTUiIGRhdGEtbmFtZT0iR3JhZGllbnRlIHNlbSBub21lIDU1IiB4MT0iMjA4LjgyIiB5MT0iMzU3LjIxIiB4Mj0iMjUuNzkiIHkyPSI0MC4xOSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM3ZmI5MjciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMjIiIHN0b3AtY29sb3I9IiM3Y2I2MjciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMzgiIHN0b3AtY29sb3I9IiM3MmIwMjgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTIiIHN0b3AtY29sb3I9IiM2M2E0MmEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNjUiIHN0b3AtY29sb3I9IiM0Yzk0MmMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNzYiIHN0b3AtY29sb3I9IiMzMDdmMzAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuODIiIHN0b3AtY29sb3I9IiMyMDczMzIiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9IkdyYWRpZW50ZV9zZW1fbm9tZV82IiBkYXRhLW5hbWU9IkdyYWRpZW50ZSBzZW0gbm9tZSA2IiB4MT0iMTkwLjQzIiB5MT0iODAuMzgiIHgyPSI0NjUuNjciIHkyPSI4MC4zOCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDk5ZDYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMiIgc3RvcC1jb2xvcj0iIzA0OGZjOSIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iIzBmNzdhOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyMTUzNzciLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9IkdyYWRpZW50ZV9zZW1fbm9tZV8zNyIgZGF0YS1uYW1lPSJHcmFkaWVudGUgc2VtIG5vbWUgMzciIHgxPSI0NjUuNjciIHkxPSIyMjkuMDUiIHgyPSI3NDAuOTEiIHkyPSIyMjkuMDUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDA5MTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjA0IiBzdG9wLWNvbG9yPSIjMGQ5NTQxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjE2IiBzdG9wLWNvbG9yPSIjMzBhMDM5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjMiIHN0b3AtY29sb3I9IiM0Y2E5MzIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNDMiIHN0b3AtY29sb3I9IiM2M2IwMmQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTkiIHN0b3AtY29sb3I9IiM3MmI1MjkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNzYiIHN0b3AtY29sb3I9IiM3Y2I4MjciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjN2ZiOTI3Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJHcmFkaWVudGVfc2VtX25vbWVfMzEiIGRhdGEtbmFtZT0iR3JhZGllbnRlIHNlbSBub21lIDMxIiBjeD0iNDY1LjY2IiBjeT0iMTU1LjMxIiBmeD0iNDY1LjY2IiBmeT0iMTU1LjMxIiByPSIyMjEuMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmMjkyMjYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZkNTE1Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExOS42NSwzODUuNDhoLTI0LjgzbC01LjM1LDEzLjk4aC00LjlsMjAuMzctNTIuMzJoNC42NWwyMC4zNyw1Mi4zMmgtNC45NmwtNS4zNS0xMy45OFpNMTE3LjkzLDM4MC45OWwtMTAuNy0yOC4xMS0xMC43LDI4LjExaDIxLjM5WiIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzAxLjk0LDM0Ny4xM3Y1Mi4zMmgtMy44OGwtMjguNjUtNDIuNDZ2NDIuNDZoLTQuNzF2LTUyLjMyaDMuODhsMjguNzEsNDIuNDZ2LTQyLjQ2aDQuNjVaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00MzkuODUsMzczLjI5YzAtMTUuMjUsOS45My0yNi42MSwyMy40My0yNi42MXMyMy4zNywxMS4yOSwyMy4zNywyNi42MS05Ljk5LDI2LjYxLTIzLjM3LDI2LjYxLTIzLjQzLTExLjM2LTIzLjQzLTI2LjYxWk00ODEuOTQsMzczLjI5YzAtMTIuNDgtNy45Ni0yMS42OC0xOC42Ni0yMS42OHMtMTguNzgsOS4xOS0xOC43OCwyMS42OCw4LjAyLDIxLjY4LDE4Ljc4LDIxLjY4LDE4LjY2LTkuMTksMTguNjYtMjEuNjhaIi8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MjAuMywzOTMuMWwxLjg1LTQuMjZjMy4xOCwzLjY2LDguODUsNi4zNSwxNC43MSw2LjM1LDguMzQsMCwxMS45Ny00LjExLDExLjk3LTkuMjcsMC0xNC4zNS0yNy40NC01LjUzLTI3LjQ0LTI0Ljg5LDAtNy43LDUuMDktMTQuMzUsMTYuNDMtMTQuMzUsNS4wMywwLDEwLjI1LDEuNzIsMTMuODIsNC42M2wtMS41OSw0LjQxYy0zLjgyLTIuOTEtOC4yOC00LjM0LTEyLjIyLTQuMzQtOC4xNSwwLTExLjc4LDQuMjYtMTEuNzgsOS40OSwwLDE0LjM1LDI3LjQ0LDUuNjgsMjcuNDQsMjQuNzQsMCw3LjctNS4yMiwxNC4yOC0xNi42MiwxNC4yOC02LjY4LDAtMTMuMjQtMi43Ny0xNi41NS02LjhaIi8+CiAgPC9nPgogIDxnPgogICAgPHBhdGggY2xhc3M9ImNscy00IiBkPSJNMTYyLjUsMTIyLjk0YzUuMzUtOS4yMSw4LjA2LTE5LDguMDYtMjkuMDksMC0xMi4zMi00LjUxLTIyLjY4LTEzLjc5LTMxLjY3LTkuMzktOS4wOS0yMC42MS0xMy41MS0zNC4zMy0xMy41MS0xNC41MSwwLTI2LjE3LDQuNjUtMzUuNjgsMTQuMTgtOS42LDkuNjctMTUuMTgsMjMuODQtMTYuNTYsNDIuMDlsLS44MywxMC41SDIwLjg2bC4zMi0xMS42OWMuODMtMjkuOTMsMTEuMDgtNTQuOTUsMzAuNDYtNzQuMzVDNzEuMSw5Ljg5LDk1LjQzLDAsMTIzLjkyLDBzNTEuNzQsOS40MSw2OS40OCwyNy45NWM5Ljg0LDEwLjI4LDE2Ljk4LDIxLjcsMjEuMzYsMzQuMTQtMjAuOTQsMjUuNDEtMzMuNjMsNTcuODctMzMuOTEsOTMuMjQtLjAyLjQtLjAyLjgtLjAyLDEuMiwwLDcuMi41MiwxNC4yOCwxLjUxLDIxLjItNS43OCw2Ljk0LTEyLjQsMTQuNDQtMTkuODYsMjIuNTNsLTUwLjYyLDU0LjVoMTA2LjE3YzIzLjMyLDI2LjQ0LDQ2LjMxLDQ0LjU0LDgzLjAxLDQ5LjIySDBsMTIyLjQ5LTEzMi4zNmMyMC41OC0yMi4wNCwzNC4wNC0zOC40MSw0MC4wMS00OC42N1oiLz4KICAgIDxnPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik0zMzkuMDksNi42NWMtNDYuMTYsMC04Ny40NiwyMS4xMy0xMTQuNzUsNTQuMjQtMjAuOTQsMjUuNDEtMzMuNjMsNTcuODctMzMuOTEsOTMuMjRoNDQuM2MuNjMtNTYuOTgsNDcuMjEtMTAzLjE3LDEwNC4zNi0xMDMuMTdzMTAzLjcxLDQ2LjE5LDEwNC4zNSwxMDMuMTdoLjE3Yy4yMi0yOC4wOSw4LjI3LTU0LjM1LDIyLjA3LTc2LjY5LTI2LjIyLTQyLjQ1LTczLjE0LTcwLjc5LTEyNi41OC03MC43OVoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNzQwLjksMTU0LjEzaC00NC4zYy4wMS40LjAxLjguMDEsMS4yLDAsNTcuNTQtNDYuODIsMTA0LjM2LTEwNC4zNiwxMDQuMzZzLTEwNC4zNi00Ni44Mi0xMDQuMzYtMTA0LjM2YzAtLjQsMC0uOC4wMS0xLjJoLS4xN2MuMDEuNC4wMS44LjAxLDEuMiwwLDI4LjUzLTguMDgsNTUuMjEtMjIuMDgsNzcuODcsMjYuMiw0Mi40NSw3My4xNCw3MC43OSwxMjYuNTgsNzAuNzksODEuOTcsMCwxNDguNjYtNjYuNjksMTQ4LjY2LTE0OC42NiwwLS40LDAtLjgtLjAxLTEuMloiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNzQwLjksMTU0LjEyaC00NC4zYy0uNjUtNTYuOTgtNDcuMi0xMDMuMTctMTA0LjM1LTEwMy4xN3MtMTAzLjcxLDQ2LjE5LTEwNC4zNSwxMDMuMTdoLS4xN2MuMDEuNC4wMS44LjAxLDEuMiwwLDI4LjUzLTguMDgsNTUuMjEtMjIuMDgsNzcuODctMjYuMiw0Mi40NS03My4xNCw3MC43OS0xMjYuNTgsNzAuNzktNi40MSwwLTEyLjcyLS40MS0xOC45MS0xLjItMzYuNy00LjY4LTY5LjI3LTIyLjc4LTkyLjU5LTQ5LjIyLTE4LjcxLTIxLjItMzEuNDgtNDcuNzUtMzUuNjgtNzcuMDQtLjk5LTYuOTItMS41MS0xNC4wMS0xLjUxLTIxLjIsMC0uNCwwLS44LjAyLTEuMmg0NC4zYy0uMDIuNC0uMDIuOC0uMDIsMS4yLDAsNTcuNTQsNDYuODQsMTA0LjM2LDEwNC4zOCwxMDQuMzZzMTA0LjM2LTQ2LjgyLDEwNC4zNi0xMDQuMzZjMC0uNCwwLS44LS4wMS0xLjJoLjE3Yy4yMi0yOC4wOSw4LjI3LTU0LjM1LDIyLjA3LTc2LjY5LDI2LjIxLTQyLjQ1LDczLjEzLTcwLjc5LDEyNi41OC03MC43OSw4MS41NywwLDE0OCw2Ni4wNCwxNDguNjUsMTQ3LjQ3WiIvPgogICAgPC9nPgogIDwvZz4KICA8Zz4KICAgIDxnPgogICAgICA8Zz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05MC4xMSw1MTIuNzJjMC0xMy40MywxMC4wMi0yMy4yMywyMy41Mi0yMy4yMyw2Ljg1LDAsMTIuODEsMi40LDE2Ljg2LDcuMDdsLTQuMTIsNC4wOWMtMy40Mi0zLjctNy42MS01LjM5LTEyLjQ5LTUuMzktMTAuMDIsMC0xNy40Myw3LjQtMTcuNDMsMTcuNDZzNy40MiwxNy40NiwxNy40MywxNy40NmM0Ljg4LDAsOS4wNy0xLjc1LDEyLjQ5LTUuNDVsNC4xMiw0LjA5Yy00LjA2LDQuNjctMTAuMDIsNy4xNC0xNi45Myw3LjE0LTEzLjQ0LDAtMjMuNDYtOS44LTIzLjQ2LTIzLjIzWiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE3OS40Myw1MjQuMDhoLTIzLjU4bC00Ljg4LDExLjM2aC02LjUzbDIwLjEtNDUuNDNoNi4yOGwyMC4xNiw0NS40M2gtNi42NmwtNC44OC0xMS4zNlpNMTYxLjg3LDQ4Ni4zaC01LjUybDguNDMtOC40NGg1LjgzbDguNDMsOC40NGgtNS41MWwtNS44My01LTUuODMsNVpNMTc3LjIyLDUxOC44OGwtOS41Ny0yMi4yNi05LjU3LDIyLjI2aDE5LjE1WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI1MS4zOSw1MzUuNDNsLS4wNi0zMy4xLTE2LjA0LDI3LjU4aC0yLjkybC0xNi4wNC0yNy4zOXYzMi45aC02LjA5di00NS40M2g1LjJsMTguNTEsMzEuOTMsMTguMjYtMzEuOTNoNS4ybC4wNiw0NS40M2gtNi4wOVoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMTEuNzUsNTI0LjA4aC0yMy41OGwtNC44OCwxMS4zNmgtNi41M2wyMC4xLTQ1LjQzaDYuMjhsMjAuMTYsNDUuNDNoLTYuNjZsLTQuODgtMTEuMzZaTTMwOS41Myw1MTguODhsLTkuNTctMjIuMjYtOS41NywyMi4yNmgxOS4xNVoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNzIuMjMsNTM1LjQzbC05LjU3LTEzLjk1Yy0uODkuMDYtMS44NC4xMy0yLjc5LjEzaC0xMC45N3YxMy44MmgtNi4zNHYtNDUuNDNoMTcuMzFjMTEuNTQsMCwxOC41MSw1Ljk3LDE4LjUxLDE1Ljg0LDAsNy4wMS0zLjU1LDEyLjA3LTkuNzYsMTQuMzRsMTAuNTIsMTUuMjVoLTYuOTFaTTM3Mi4wNCw1MDUuODRjMC02LjQ5LTQuMjUtMTAuMTktMTIuMzYtMTAuMTloLTEwLjc4djIwLjQ0aDEwLjc4YzguMTEsMCwxMi4zNi0zLjc2LDEyLjM2LTEwLjI1WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQyOS42LDUyNC4wOGgtMjMuNThsLTQuODgsMTEuMzZoLTYuNTNsMjAuMS00NS40M2g2LjI4bDIwLjE2LDQ1LjQzaC02LjY2bC00Ljg4LTExLjM2Wk00MjcuMzgsNTE4Ljg4bC05LjU3LTIyLjI2LTkuNTcsMjIuMjZoMTkuMTVaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDkwLjE1LDQ5MGgxOC43YzE0LjI2LDAsMjMuOTYsOS4yMiwyMy45NiwyMi43MXMtOS43LDIyLjcxLTIzLjk2LDIyLjcxaC0xOC43di00NS40M1pNNTA4LjQ3LDUyOS43OWMxMC45NywwLDE4LTYuODgsMTgtMTcuMDdzLTcuMDQtMTcuMDctMTgtMTcuMDdoLTExLjk4djM0LjE0aDExLjk4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU1MS41OCw1MTIuNzJjMC0xMy4zLDEwLjAyLTIzLjIzLDIzLjY1LTIzLjIzczIzLjUyLDkuODYsMjMuNTIsMjMuMjMtMTAuMDIsMjMuMjMtMjMuNTIsMjMuMjMtMjMuNjUtOS45My0yMy42NS0yMy4yM1pNNTkyLjQxLDUxMi43MmMwLTEwLjA2LTcuMzUtMTcuNDYtMTcuMTgtMTcuNDZzLTE3LjMxLDcuNC0xNy4zMSwxNy40Niw3LjM1LDE3LjQ2LDE3LjMxLDE3LjQ2LDE3LjE4LTcuNCwxNy4xOC0xNy40NloiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MTcuMDcsNTMwLjI0bDIuMzUtNS4wNmMzLjMsMy4wNSw4Ljk0LDUuMjYsMTQuNjQsNS4yNiw3LjY3LDAsMTAuOTctMy4wNSwxMC45Ny03LjAxLDAtMTEuMS0yNi44OC00LjA5LTI2Ljg4LTIwLjk2LDAtNy4wMSw1LjMzLTEyLjk4LDE2Ljk5LTEyLjk4LDUuMiwwLDEwLjU5LDEuNDMsMTQuMjYsNC4wMmwtMi4wOSw1LjE5Yy0zLjg3LTIuNTMtOC4yNC0zLjctMTIuMTctMy43LTcuNTQsMC0xMC43OCwzLjI1LTEwLjc4LDcuMiwwLDExLjEsMjYuODgsNC4xNSwyNi44OCwyMC44MywwLDYuOTQtNS40NSwxMi45MS0xNy4xOCwxMi45MS02Ljc4LDAtMTMuNDQtMi4zNC0xNi45OS01LjcxWiIvPgogICAgICA8L2c+CiAgICAgIDxnPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExOC41NCw1NjEuMzloMTguN2MxNC4yNiwwLDIzLjk2LDkuMjIsMjMuOTYsMjIuNzFzLTkuNywyMi43MS0yMy45NiwyMi43MWgtMTguN3YtNDUuNDNaTTEzNi44Niw2MDEuMThjMTAuOTcsMCwxOC02Ljg4LDE4LTE3LjA3cy03LjA0LTE3LjA3LTE4LTE3LjA3aC0xMS45OHYzNC4xNGgxMS45OFoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yMTUuNzksNjAxLjE4djUuNjVoLTMyLjIxdi00NS40M2gzMS4zMnY1LjY1aC0yNC45OHYxMy45NWgyMi4yNXY1LjUyaC0yMi4yNXYxNC42N2gyNS44NloiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNzQuNTcsNTc3LjIzYzAsOS44Ni02Ljk4LDE1LjgzLTE4LjUxLDE1LjgzaC0xMC45N3YxMy43NmgtNi4zNHYtNDUuNDNoMTcuMzFjMTEuNTQsMCwxOC41MSw1Ljk3LDE4LjUxLDE1Ljg0Wk0yNjguMjMsNTc3LjIzYzAtNi40OS00LjI1LTEwLjE5LTEyLjM2LTEwLjE5aC0xMC43OHYyMC4zOGgxMC43OGM4LjExLDAsMTIuMzYtMy43LDEyLjM2LTEwLjE5WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI5Ni4zMSw1ODcuMjJ2LTI1LjgzaDYuMzR2MjUuNTdjMCwxMC4wNiw0LjUsMTQuNiwxMi40OSwxNC42czEyLjU1LTQuNTQsMTIuNTUtMTQuNnYtMjUuNTdoNi4xNXYyNS44M2MwLDEzLjE3LTcuMDQsMjAuMTItMTguNzYsMjAuMTJzLTE4Ljc3LTYuOTQtMTguNzctMjAuMTJaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzY3LjUxLDU2Ny4wNGgtMTUuMjF2LTUuNjVoMzYuNzF2NS42NWgtMTUuMjF2MzkuNzhoLTYuMjh2LTM5Ljc4WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQzNC42NCw1OTUuNDdoLTIzLjU4bC00Ljg4LDExLjM2aC02LjUzbDIwLjEtNDUuNDNoNi4yOGwyMC4xNiw0NS40M2gtNi42NmwtNC44OC0xMS4zNlpNNDMyLjQyLDU5MC4yN2wtOS41Ny0yMi4yNi05LjU3LDIyLjI2aDE5LjE1WiIvPgogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ2NS4zOSw1NjEuMzloMTguN2MxNC4yNiwwLDIzLjk2LDkuMjIsMjMuOTYsMjIuNzFzLTkuNywyMi43MS0yMy45NiwyMi43MWgtMTguN3YtNDUuNDNaTTQ4My43MSw2MDEuMThjMTAuOTcsMCwxOC02Ljg4LDE4LTE3LjA3cy03LjA0LTE3LjA3LTE4LTE3LjA3aC0xMS45OHYzNC4xNGgxMS45OFoiLz4KICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01MjYuODIsNTg0LjExYzAtMTMuMywxMC4wMi0yMy4yMywyMy42NS0yMy4yM3MyMy41Miw5Ljg2LDIzLjUyLDIzLjIzLTEwLjAyLDIzLjIzLTIzLjUyLDIzLjIzLTIzLjY1LTkuOTMtMjMuNjUtMjMuMjNaTTU2Ny42NSw1ODQuMTFjMC0xMC4wNi03LjM1LTE3LjQ2LTE3LjE4LTE3LjQ2cy0xNy4zMSw3LjQtMTcuMzEsMTcuNDYsNy4zNSwxNy40NiwxNy4zMSwxNy40NiwxNy4xOC03LjQsMTcuMTgtMTcuNDZaIi8+CiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTkyLjI1LDYwMS42M2wyLjM1LTUuMDZjMy4zLDMuMDUsOC45NCw1LjI2LDE0LjY0LDUuMjYsNy42NywwLDEwLjk3LTMuMDUsMTAuOTctNy4wMSwwLTExLjEtMjYuODgtNC4wOS0yNi44OC0yMC45NiwwLTcuMDEsNS4zMy0xMi45OCwxNi45OS0xMi45OCw1LjIsMCwxMC41OSwxLjQzLDE0LjI2LDQuMDJsLTIuMDksNS4xOWMtMy44Ny0yLjUzLTguMjQtMy43LTEyLjE3LTMuNy03LjU0LDAtMTAuNzgsMy4yNS0xMC43OCw3LjIsMCwxMS4xLDI2Ljg4LDQuMTUsMjYuODgsMjAuODMsMCw2Ljk0LTUuNDUsMTIuOTEtMTcuMTgsMTIuOTEtNi43OCwwLTEzLjQ0LTIuMzQtMTYuOTktNS43MVoiLz4KICAgICAgPC9nPgogICAgPC9nPgogICAgPHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxNC4xNCIgeT0iNDM5LjM4IiB3aWR0aD0iNzEyLjYzIiBoZWlnaHQ9IjIuNDgiLz4KICA8L2c+Cjwvc3ZnPg==
+    </script>
+    <script type="text/babel">
+      const { useState, useEffect, useCallback, useRef } = React;
 
-const LOGO_H = "data:image/svg+xml;base64," + document.getElementById("p3b64").textContent;
-const LOGO_V = "data:image/svg+xml;base64," + document.getElementById("p2b64").textContent;
+      const LOGO_H =
+        "data:image/svg+xml;base64," +
+        document.getElementById("p3b64").textContent;
+      const LOGO_V =
+        "data:image/svg+xml;base64," +
+        document.getElementById("p2b64").textContent;
 
-/* Supabase */
-const SB="https://hubizwkdqxquaojhmkbm.supabase.co";
-const KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh1Yml6d2tkcXhxdWFvamhta2JtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg2Mjk1MzksImV4cCI6MjA5NDIwNTUzOX0.-mjYKXIVLVJMyuy-2kd7GGSqzS4bnIwbu-s7jPy9v2c";
-const H={"apikey":KEY,"Authorization":`Bearer ${KEY}`,"Content-Type":"application/json"};
-async function dbLoad(){const r=await fetch(`${SB}/rest/v1/checklist_state?id=eq.1&select=data,updated_at`,{headers:H});if(!r.ok)throw new Error(`${r.status}`);const rows=await r.json();return rows.length>0?rows[0]:null;}
-async function dbSave(data){const r=await fetch(`${SB}/rest/v1/checklist_state`,{method:"POST",headers:{...H,"Prefer":"resolution=merge-duplicates"},body:JSON.stringify({id:1,data,updated_at:new Date().toISOString()})});if(!r.ok)throw new Error(`${r.status}`);}
+      /* Supabase */
+      const SB = "https://hubizwkdqxquaojhmkbm.supabase.co";
+      const KEY =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh1Yml6d2tkcXhxdWFvamhta2JtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg2Mjk1MzksImV4cCI6MjA5NDIwNTUzOX0.-mjYKXIVLVJMyuy-2kd7GGSqzS4bnIwbu-s7jPy9v2c";
+      const H = {
+        apikey: KEY,
+        Authorization: `Bearer ${KEY}`,
+        "Content-Type": "application/json",
+      };
+      async function dbLoad() {
+        const r = await fetch(
+          `${SB}/rest/v1/checklist_state?id=eq.1&select=data,updated_at`,
+          { headers: H },
+        );
+        if (!r.ok) throw new Error(`${r.status}`);
+        const rows = await r.json();
+        return rows.length > 0 ? rows[0] : null;
+      }
+      async function dbSave(data) {
+        const r = await fetch(`${SB}/rest/v1/checklist_state`, {
+          method: "POST",
+          headers: { ...H, Prefer: "resolution=merge-duplicates" },
+          body: JSON.stringify({
+            id: 1,
+            data,
+            updated_at: new Date().toISOString(),
+          }),
+        });
+        if (!r.ok) throw new Error(`${r.status}`);
+      }
 
-/* Brand colors - extracted from SVG gradients */
-const B={
-  green:"#4a9428",   /* #7fb927 -> #207332 gradient avg */
-  blue:"#0d77a8",    /* #0099d6 -> #215377 gradient avg */
-  yellow:"#f5b320",  /* #f29226 -> #ffd515 radial avg  */
-  greenL:"#63b02d",
-  blueL:"#0488c4",
-  yellowL:"#ffd515",
-  white:"#ffffff",
-};
+      /* Brand colors - extracted from SVG gradients */
+      const B = {
+        green: "#A3EF15",
+        blue: "#22ACDD",
+        yellow: "#F58A1F",
+        magenta: "#E9118C",
+        purple: "#5C2D90",
+        black: "#131313",
+        greenL: "#A3EF15",
+        blueL: "#22ACDD",
+        yellowL: "#F58A1F",
+        white: "#ffffff",
+      };
 
-/* Social icons */
-const IconInstagram=({s=18,c="currentColor"})=>(
-  <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-  </svg>
-);
-const IconFacebook=({s=18,c="currentColor"})=>(
-  <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
-    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-  </svg>
-);
-const IconX=({s=18,c="currentColor"})=>(
-  <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-  </svg>
-);
-const IconBluesky=({s=18,c="currentColor"})=>(
-  <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
-    <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 01-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/>
-  </svg>
-);
-const IconThreads=({s=18,c="currentColor"})=>(
-  <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
-    <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 011.2.017c-.18-.726-.258-1.294-.258-1.72 0-.602.093-1.108.279-1.5.306-.644.917-1.01 1.759-1.01.966 0 1.64.415 2.002 1.23.482 1.078.417 2.978-.177 5.126.408.16.786.351 1.132.574 1.137.723 1.91 1.768 2.244 3.026.45 1.712.136 3.77-1.063 5.354C18.313 22.99 15.791 24 12.186 24zm.177-8.811c-.07 0-.14.002-.211.006-1.023.058-1.848.33-2.383.784-.43.364-.647.828-.618 1.308.029.52.332.973.853 1.312.567.368 1.323.558 2.148.514 1.111-.059 1.975-.49 2.568-1.279.535-.712.797-1.715.803-3.066a11.725 11.725 0 00-.927-.097c-.08-.007-.16-.01-.233-.01v-.472z"/>
-  </svg>
-);
-const IconTikTok=({s=18,c="currentColor"})=>(
-  <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
-    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-  </svg>
-);
-const IconPinterest=({s=18,c="currentColor"})=>(
-  <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
-    <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
-  </svg>
-);
+      /* Social icons */
+      const IconInstagram = ({ s = 18, c = "currentColor" }) => (
+        <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </svg>
+      );
+      const IconFacebook = ({ s = 18, c = "currentColor" }) => (
+        <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg>
+      );
+      const IconX = ({ s = 18, c = "currentColor" }) => (
+        <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      );
+      const IconBluesky = ({ s = 18, c = "currentColor" }) => (
+        <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
+          <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 01-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z" />
+        </svg>
+      );
+      const IconThreads = ({ s = 18, c = "currentColor" }) => (
+        <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
+          <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 011.2.017c-.18-.726-.258-1.294-.258-1.72 0-.602.093-1.108.279-1.5.306-.644.917-1.01 1.759-1.01.966 0 1.64.415 2.002 1.23.482 1.078.417 2.978-.177 5.126.408.16.786.351 1.132.574 1.137.723 1.91 1.768 2.244 3.026.45 1.712.136 3.77-1.063 5.354C18.313 22.99 15.791 24 12.186 24zm.177-8.811c-.07 0-.14.002-.211.006-1.023.058-1.848.33-2.383.784-.43.364-.647.828-.618 1.308.029.52.332.973.853 1.312.567.368 1.323.558 2.148.514 1.111-.059 1.975-.49 2.568-1.279.535-.712.797-1.715.803-3.066a11.725 11.725 0 00-.927-.097c-.08-.007-.16-.01-.233-.01v-.472z" />
+        </svg>
+      );
+      const IconTikTok = ({ s = 18, c = "currentColor" }) => (
+        <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
+          <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+        </svg>
+      );
+      const IconPinterest = ({ s = 18, c = "currentColor" }) => (
+        <svg width={s} height={s} viewBox="0 0 24 24" fill={c}>
+          <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+        </svg>
+      );
 
-function PlatformIcon({name,s=17}){
-  const c="rgba(255,255,255,.55)";
-  const n=name.toLowerCase();
-  if(n.includes("instagram"))return <IconInstagram s={s} c={c}/>;
-  if(n.includes("facebook")) return <IconFacebook  s={s} c={c}/>;
-  if(n.includes("pinterest"))return <IconPinterest s={s} c={c}/>;
-  if(n.includes("tiktok")||n.includes("kwai"))return <IconTikTok s={s} c={c}/>;
-  if(n.includes("twitter")||n.includes("bluesky")||n.includes("threads"))
-    return <span style={{display:"flex",alignItems:"center",gap:4}}>
-      <IconX s={s} c={c}/><IconBluesky s={s} c={c}/><IconThreads s={s} c={c}/>
-    </span>;
-  return null;
-}
+      function PlatformIcon({ name, s = 17 }) {
+        const c = "rgba(255,255,255,.55)";
+        const n = name.toLowerCase();
+        if (n.includes("instagram")) return <IconInstagram s={s} c={c} />;
+        if (n.includes("facebook")) return <IconFacebook s={s} c={c} />;
+        if (n.includes("pinterest")) return <IconPinterest s={s} c={c} />;
+        if (n.includes("tiktok") || n.includes("kwai"))
+          return <IconTikTok s={s} c={c} />;
+        if (
+          n.includes("twitter") ||
+          n.includes("bluesky") ||
+          n.includes("threads")
+        )
+          return (
+            <span style={{ display: "flex", alignItems: "center", gap: 4 }}>
+              <IconX s={s} c={c} />
+              <IconBluesky s={s} c={c} />
+              <IconThreads s={s} c={c} />
+            </span>
+          );
+        return null;
+      }
 
-/* Checklist data */
-const SPONSORS="@caixa · @caixaesportes · @govbr · @geapsaude · @sindilegis";
+      /* Checklist data */
+      const SPONSORS =
+        "@caixa · @caixaesportes · @govbr · @geapsaude · @sindilegis";
 
-const INITIAL={
-  preCorrida:{label:"PRÉ-CORRIDA",accent:B.blue,platforms:[
-    {id:"ig-pre", name:"Instagram",              handle:"@camaradosdeputados",items:[
-      {id:"ig1",label:"11/5 – Entrega de kits",done:true,mandatory:true},
-      {id:"ig2",label:"12/5 – Trajeto da corrida",done:true,mandatory:true},
-      {id:"ig3",label:"13/5 – Peguei meu kit!",done:false,mandatory:true},
-      {id:"ig4",label:"14/5 – Participação popular + contagem regressiva",done:false,mandatory:false},
-      {id:"ig5",label:"15/5 – Últimos momentos para pegar kits",done:false,mandatory:false},
-      {id:"ig6",label:"16/5 – É amanhã! (+programação?)",done:false,mandatory:false},
-      {id:"ig7",label:`Collab no Instagram + marcação @camaradosdeputados – ${SPONSORS}`,done:false,mandatory:true},
-    ]},
-    {id:"fb-pre", name:"Facebook",               handle:"@camaradosdeputados",items:[
-      {id:"fb1",label:"11/5 – Entrega de kits",done:true,mandatory:true},
-      {id:"fb2",label:"12/5 – Trajeto da corrida",done:true,mandatory:true},
-      {id:"fb3",label:"13/5 – Peguei meu kit!",done:false,mandatory:true},
-      {id:"fb4",label:"14/5 – Participação popular + contagem regressiva",done:false,mandatory:false},
-      {id:"fb5",label:"15/5 – Últimos momentos para pegar kits",done:false,mandatory:false},
-      {id:"fb6",label:"16/5 – É amanhã! (+programação?)",done:false,mandatory:false},
-    ]},
-    {id:"tw-pre", name:"Twitter · Bluesky · Threads",handle:"@camaradosdeputados",items:[
-      {id:"tw1",label:"11/5 – Entrega de kits",done:true,mandatory:true},
-      {id:"tw2",label:"12/5 – Trajeto da corrida",done:true,mandatory:true},
-      {id:"tw3",label:"13/5 – Peguei meu kit!",done:false,mandatory:true},
-      {id:"tw4",label:"14/5 – Participação popular + contagem regressiva",done:false,mandatory:false},
-      {id:"tw5",label:"15/5 – Últimos momentos para pegar kits",done:false,mandatory:false},
-      {id:"tw6",label:"16/5 – É amanhã! (+programação?)",done:false,mandatory:false},
-    ]},
-  ]},
-  diaCorrida:{label:"DIA DA CORRIDA — 17/05",accent:B.green,platforms:[
-    {id:"ig-dia-main",name:"Instagram",handle:"@camaradosdeputados",items:[
-      {id:"igd1",label:"Stories – Início do evento",done:false,mandatory:false},
-      {id:"igd2",label:"Stories – Cobertura especial TV e Rádio",done:false,mandatory:false},
-      {id:"igd3",label:"Stories – Cortes com falas interessantes",done:false,mandatory:false},
-      {id:"igd4",label:"Stories – Fotos republicadas com menção",done:false,mandatory:false},
-      {id:"igd5",label:"Stories – Republicação do feed",done:false,mandatory:false},
-      {id:"igd6",label:"Feed – Vídeo com os melhores momentos",done:false,mandatory:false},
-      {id:"igd7",label:"Feed – Galeria de fotos + falas de destaque",done:false,mandatory:false},
-      {id:"igd8",label:`Collab no Instagram + marcação @camaradosdeputados – ${SPONSORS}`,done:false,mandatory:true},
-    ]},
-    {id:"ig-dia-tv",name:"Instagram",handle:"@radiocamara e @tvcamaradosdeputados",items:[
-      {id:"igtv1",label:"Transmissão da programação especial",done:false,mandatory:false},
-      {id:"igtv2",label:"Vídeo no feed/stories – melhores momentos e arena",done:false,mandatory:false},
-      {id:"igtv3",label:"Stories de depoimentos",done:false,mandatory:false},
-    ]},
-    {id:"fb-dia-main",name:"Facebook",handle:"@camaradosdeputados",items:[
-      {id:"fbd1",label:"Stories – Início do evento",done:false,mandatory:false},
-      {id:"fbd2",label:"Stories – Cobertura especial TV e Rádio",done:false,mandatory:false},
-      {id:"fbd3",label:"Stories – Cortes com falas interessantes",done:false,mandatory:false},
-      {id:"fbd4",label:"Stories – Fotos republicadas com menção",done:false,mandatory:false},
-      {id:"fbd5",label:"Feed – Vídeo com os melhores momentos",done:false,mandatory:false},
-    ]},
-    {id:"fb-dia-tv",name:"Facebook",handle:"@radiocamara e @tvcamaradosdeputados",items:[
-      {id:"fbtv1",label:"Transmissão da programação especial",done:false,mandatory:false},
-      {id:"fbtv2",label:"Vídeo no feed – melhores momentos e tendas",done:false,mandatory:false},
-      {id:"fbtv3",label:"Stories de depoimentos",done:false,mandatory:false},
-      {id:"fbtv4",label:"Álbum de fotos",done:false,mandatory:false},
-    ]},
-    {id:"tw-dia-main",name:"Twitter · Bluesky · Threads",handle:"@camaradosdeputados",items:[
-      {id:"twd1",label:"Início do evento",done:false,mandatory:false},
-      {id:"twd2",label:"Cobertura especial TV e Rádio",done:false,mandatory:false},
-      {id:"twd3",label:"Cortes com falas interessantes",done:false,mandatory:false},
-      {id:"twd4",label:"Vídeo com os melhores momentos",done:false,mandatory:false},
-      {id:"twd5",label:"Post enviando para o Pinterest",done:false,mandatory:false},
-    ]},
-    {id:"tw-dia-tv",name:"Twitter · Bluesky · Threads",handle:"@radiocamara e @tvcamaradosdeputados",items:[
-      {id:"twtv1",label:"Transmissão da programação especial",done:false,mandatory:false},
-      {id:"twtv2",label:"Vídeo com os melhores momentos e tendas",done:false,mandatory:false},
-    ]},
-    {id:"pin-dia",name:"Pinterest",handle:"@camaradosdeputados",items:[
-      {id:"pin1",label:"Galeria de fotos do evento – todos os pódios",done:false,mandatory:false},
-    ]},
-    {id:"tktok-dia",name:"TikTok · Kwai",handle:"@camaradosdeputados",items:[
-      {id:"tk1",label:"Vídeo-resumo do evento – AVALIAR NO DIA",done:false,mandatory:false},
-    ]},
-    {id:"tktok-tv",name:"TikTok",handle:"@tvcamaradosdeputados",items:[
-      {id:"tktv1",label:"Transmissão da programação especial",done:false,mandatory:false},
-      {id:"tktv2",label:"Vídeo com os melhores momentos e tendas",done:false,mandatory:false},
-    ]},
-  ]},
-};
+      const INITIAL = {
+        preCorrida: {
+          label: "PRÉ-CORRIDA",
+          accent: B.blue,
+          platforms: [
+            {
+              id: "ig-pre",
+              name: "Instagram",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "ig1",
+                  label: "11/5 – Entrega de kits",
+                  done: true,
+                  mandatory: true,
+                },
+                {
+                  id: "ig2",
+                  label: "12/5 – Trajeto da corrida",
+                  done: true,
+                  mandatory: true,
+                },
+                {
+                  id: "ig3",
+                  label: "13/5 – Peguei meu kit!",
+                  done: false,
+                  mandatory: true,
+                },
+                {
+                  id: "ig4",
+                  label: "14/5 – Participação popular + contagem regressiva",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "ig5",
+                  label: "15/5 – Últimos momentos para pegar kits",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "ig6",
+                  label: "16/5 – É amanhã! (+programação?)",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "ig7",
+                  label: `Collab no Instagram + marcação @camaradosdeputados – ${SPONSORS}`,
+                  done: false,
+                  mandatory: true,
+                },
+              ],
+            },
+            {
+              id: "fb-pre",
+              name: "Facebook",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "fb1",
+                  label: "11/5 – Entrega de kits",
+                  done: true,
+                  mandatory: true,
+                },
+                {
+                  id: "fb2",
+                  label: "12/5 – Trajeto da corrida",
+                  done: true,
+                  mandatory: true,
+                },
+                {
+                  id: "fb3",
+                  label: "13/5 – Peguei meu kit!",
+                  done: false,
+                  mandatory: true,
+                },
+                {
+                  id: "fb4",
+                  label: "14/5 – Participação popular + contagem regressiva",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fb5",
+                  label: "15/5 – Últimos momentos para pegar kits",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fb6",
+                  label: "16/5 – É amanhã! (+programação?)",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "tw-pre",
+              name: "Twitter · Bluesky · Threads",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "tw1",
+                  label: "11/5 – Entrega de kits",
+                  done: true,
+                  mandatory: true,
+                },
+                {
+                  id: "tw2",
+                  label: "12/5 – Trajeto da corrida",
+                  done: true,
+                  mandatory: true,
+                },
+                {
+                  id: "tw3",
+                  label: "13/5 – Peguei meu kit!",
+                  done: false,
+                  mandatory: true,
+                },
+                {
+                  id: "tw4",
+                  label: "14/5 – Participação popular + contagem regressiva",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "tw5",
+                  label: "15/5 – Últimos momentos para pegar kits",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "tw6",
+                  label: "16/5 – É amanhã! (+programação?)",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+          ],
+        },
+        diaCorrida: {
+          label: "DIA DA CORRIDA — 17/05",
+          accent: B.green,
+          platforms: [
+            {
+              id: "ig-dia-main",
+              name: "Instagram",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "igd1",
+                  label: "Stories – Início do evento",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igd2",
+                  label: "Stories – Cobertura especial TV e Rádio",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igd3",
+                  label: "Stories – Cortes com falas interessantes",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igd4",
+                  label: "Stories – Fotos republicadas com menção",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igd5",
+                  label: "Stories – Republicação do feed",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igd6",
+                  label: "Feed – Vídeo com os melhores momentos",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igd7",
+                  label: "Feed – Galeria de fotos + falas de destaque",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igd8",
+                  label: `Collab no Instagram + marcação @camaradosdeputados – ${SPONSORS}`,
+                  done: false,
+                  mandatory: true,
+                },
+              ],
+            },
+            {
+              id: "ig-dia-tv",
+              name: "Instagram",
+              handle: "@radiocamara e @tvcamaradosdeputados",
+              items: [
+                {
+                  id: "igtv1",
+                  label: "Transmissão da programação especial",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igtv2",
+                  label: "Vídeo no feed/stories – melhores momentos e arena",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "igtv3",
+                  label: "Stories de depoimentos",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "fb-dia-main",
+              name: "Facebook",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "fbd1",
+                  label: "Stories – Início do evento",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fbd2",
+                  label: "Stories – Cobertura especial TV e Rádio",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fbd3",
+                  label: "Stories – Cortes com falas interessantes",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fbd4",
+                  label: "Stories – Fotos republicadas com menção",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fbd5",
+                  label: "Feed – Vídeo com os melhores momentos",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "fb-dia-tv",
+              name: "Facebook",
+              handle: "@radiocamara e @tvcamaradosdeputados",
+              items: [
+                {
+                  id: "fbtv1",
+                  label: "Transmissão da programação especial",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fbtv2",
+                  label: "Vídeo no feed – melhores momentos e tendas",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fbtv3",
+                  label: "Stories de depoimentos",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "fbtv4",
+                  label: "Álbum de fotos",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "tw-dia-main",
+              name: "Twitter · Bluesky · Threads",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "twd1",
+                  label: "Início do evento",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "twd2",
+                  label: "Cobertura especial TV e Rádio",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "twd3",
+                  label: "Cortes com falas interessantes",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "twd4",
+                  label: "Vídeo com os melhores momentos",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "twd5",
+                  label: "Post enviando para o Pinterest",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "tw-dia-tv",
+              name: "Twitter · Bluesky · Threads",
+              handle: "@radiocamara e @tvcamaradosdeputados",
+              items: [
+                {
+                  id: "twtv1",
+                  label: "Transmissão da programação especial",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "twtv2",
+                  label: "Vídeo com os melhores momentos e tendas",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "pin-dia",
+              name: "Pinterest",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "pin1",
+                  label: "Galeria de fotos do evento – todos os pódios",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "tktok-dia",
+              name: "TikTok · Kwai",
+              handle: "@camaradosdeputados",
+              items: [
+                {
+                  id: "tk1",
+                  label: "Vídeo-resumo do evento – AVALIAR NO DIA",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+            {
+              id: "tktok-tv",
+              name: "TikTok",
+              handle: "@tvcamaradosdeputados",
+              items: [
+                {
+                  id: "tktv1",
+                  label: "Transmissão da programação especial",
+                  done: false,
+                  mandatory: false,
+                },
+                {
+                  id: "tktv2",
+                  label: "Vídeo com os melhores momentos e tendas",
+                  done: false,
+                  mandatory: false,
+                },
+              ],
+            },
+          ],
+        },
+      };
 
-const EQUIPE=[
-  {name:"Warley",     role:"Produtor-publicador @camaradosdeputados"},
-  {name:"Cris Saemi", role:"Validação/publicação @radio e @tv"},
-  {name:"Renata",     role:"Validação/publicação Pinterest"},
-  {name:"Caio",       role:"Produtor de corte"},
-  {name:"Yusseff",    role:"Produtor de sonoras da corrida"},
-  {name:"Luciana",    role:"Seleção de depoimentos"},
-  {name:"Pablo e Luís",role:"Videomakers"},
-  {name:"Lucas",      role:"Designer"},
-  {name:"Ailton",     role:"Direção de Reels"},
-  {name:"Ginny",      role:"Coordenação"},
-  {name:"João Paulo", role:"Entrada ao vivo / cobertura conjunta"},
-];
-const CORREDORES=["Clarice","Well","Carol","Malu","Pedro","Isaque","Mari","Diego","Vera","Yusseff"];
+      const EQUIPE = [
+        { name: "Warley", role: "Produtor-publicador @camaradosdeputados" },
+        { name: "Cris Saemi", role: "Validação/publicação @radio e @tv" },
+        { name: "Renata", role: "Validação/publicação Pinterest" },
+        { name: "Caio", role: "Produtor de corte" },
+        { name: "Yusseff", role: "Produtor de sonoras da corrida" },
+        { name: "Luciana", role: "Seleção de depoimentos" },
+        { name: "Pablo e Luís", role: "Videomakers" },
+        { name: "Lucas", role: "Designer" },
+        { name: "Ailton", role: "Direção de Reels" },
+        { name: "Ginny", role: "Coordenação" },
+        { name: "João Paulo", role: "Entrada ao vivo / cobertura conjunta" },
+      ];
+      const CORREDORES = [
+        "Clarice",
+        "Well",
+        "Carol",
+        "Malu",
+        "Pedro",
+        "Isaque",
+        "Mari",
+        "Diego",
+        "Vera",
+        "Yusseff",
+      ];
 
-const SECTION_ORDER=["preCorrida","diaCorrida"];
-const orderedSectionEntries=d=>[...SECTION_ORDER.filter(k=>d[k]),...Object.keys(d).filter(k=>!SECTION_ORDER.includes(k))].map(k=>[k,d[k]]);
-const flat=d=>orderedSectionEntries(d).flatMap(([,s])=>s.platforms.flatMap(p=>p.items));
-const pct=(a,b)=>b===0?0:Math.round(a/b*100);
-const sClr=p=>p<33?"#C0392B":p<66?B.yellow:B.greenL;
-const fmt=d=>d?d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit",second:"2-digit"}):"";
+      const SECTION_ORDER = ["preCorrida", "diaCorrida"];
+      const orderedSectionEntries = (d) =>
+        [
+          ...SECTION_ORDER.filter((k) => d[k]),
+          ...Object.keys(d).filter((k) => !SECTION_ORDER.includes(k)),
+        ].map((k) => [k, d[k]]);
+      const flat = (d) =>
+        orderedSectionEntries(d).flatMap(([, s]) =>
+          s.platforms.flatMap((p) => p.items),
+        );
+      const pct = (a, b) => (b === 0 ? 0 : Math.round((a / b) * 100));
+      const sClr = (p) => (p < 33 ? "#C0392B" : p < 66 ? B.yellow : B.greenL);
+      const fmt = (d) =>
+        d
+          ? d.toLocaleTimeString("pt-BR", {
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+            })
+          : "";
 
-function mergeChecklistData(saved){
-  if(!saved||Object.keys(saved).length===0)return INITIAL;
-  const mandatoryById=new Map();
-  Object.values(INITIAL).forEach(section=>{
-    section.platforms.forEach(platform=>{
-      platform.items.forEach(item=>mandatoryById.set(item.id,item.mandatory));
-    });
-  });
-  const merged={...saved};
-  return Object.fromEntries(orderedSectionEntries(INITIAL).map(([sectionKey,initialSection])=>{
-    const section=merged[sectionKey]||initialSection;
-    return [
-    sectionKey,
-    {
-      ...initialSection,
-      ...section,
-      platforms:section.platforms?.map(platform=>({
-        ...platform,
-        items:platform.items?.map(item=>({
-          ...item,
-          mandatory:mandatoryById.has(item.id)?mandatoryById.get(item.id):item.mandatory,
-        }))||[],
-      }))||[],
-    },
-  ];
-  }).concat(Object.entries(merged).filter(([sectionKey])=>!SECTION_ORDER.includes(sectionKey))));
-}
+      function mergeChecklistData(saved) {
+        if (!saved || Object.keys(saved).length === 0) return INITIAL;
+        const mandatoryById = new Map();
+        Object.values(INITIAL).forEach((section) => {
+          section.platforms.forEach((platform) => {
+            platform.items.forEach((item) =>
+              mandatoryById.set(item.id, item.mandatory),
+            );
+          });
+        });
+        const merged = { ...saved };
+        return Object.fromEntries(
+          orderedSectionEntries(INITIAL)
+            .map(([sectionKey, initialSection]) => {
+              const section = merged[sectionKey] || initialSection;
+              return [
+                sectionKey,
+                {
+                  ...initialSection,
+                  ...section,
+                  platforms:
+                    section.platforms?.map((platform) => ({
+                      ...platform,
+                      items:
+                        platform.items?.map((item) => ({
+                          ...item,
+                          mandatory: mandatoryById.has(item.id)
+                            ? mandatoryById.get(item.id)
+                            : item.mandatory,
+                        })) || [],
+                    })) || [],
+                },
+              ];
+            })
+            .concat(
+              Object.entries(merged).filter(
+                ([sectionKey]) => !SECTION_ORDER.includes(sectionKey),
+              ),
+            ),
+        );
+      }
 
-function Checkbox({done}){
-  return(
-    <div style={{width:19,height:19,borderRadius:5,flexShrink:0,marginTop:1,display:"flex",alignItems:"center",justifyContent:"center",transition:"all .2s",background:done?B.greenL:"transparent",border:done?"none":"1.5px solid rgba(255,255,255,.2)"}}>
-      {done&&<svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>}
-    </div>
-  );
-}
-
-function App(){
-  const[data,setData]=useState(INITIAL);
-  const[status,setStatus]=useState("booting");
-  const[lastSync,setLastSync]=useState(null);
-  const[lastUpdatedAt,setLastUpdatedAt]=useState(null);
-  const[errMsg,setErrMsg]=useState("");
-  const saveTimer=useRef(null);
-  const booted=useRef(false);
-
-  useEffect(()=>{
-    (async()=>{
-      try{const row=await dbLoad();if(row?.data&&Object.keys(row.data).length>0){setData(mergeChecklistData(row.data));setLastUpdatedAt(row.updated_at);}setLastSync(new Date());setStatus("idle");}
-      catch(e){setErrMsg(e.message);setStatus("error");}
-      finally{booted.current=true;}
-    })();
-  },[]);
-
-  useEffect(()=>{
-    if(!booted.current)return;
-    setStatus("saving");
-    clearTimeout(saveTimer.current);
-    saveTimer.current=setTimeout(async()=>{
-      try{await dbSave(data);setLastSync(new Date());setStatus("saved");setTimeout(()=>setStatus("idle"),2500);}
-      catch(e){setErrMsg(e.message);setStatus("error");}
-    },1200);
-    return()=>clearTimeout(saveTimer.current);
-  },[data]);
-
-  useEffect(()=>{
-    const id=setInterval(async()=>{
-      if(status==="saving"||status==="booting")return;
-      try{const row=await dbLoad();if(row?.updated_at&&row.updated_at!==lastUpdatedAt){setData(mergeChecklistData(row.data));setLastUpdatedAt(row.updated_at);setLastSync(new Date());}}
-      catch{}
-    },5000);
-    return()=>clearInterval(id);
-  },[status,lastUpdatedAt]);
-
-  const toggle=useCallback((sk,pid,iid)=>{
-    setData(prev=>{
-      const sec={...prev[sk]};
-      sec.platforms=sec.platforms.map(p=>p.id!==pid?p:{...p,items:p.items.map(i=>i.id===iid?{...i,done:!i.done}:i)});
-      return{...prev,[sk]:sec};
-    });
-  },[]);
-
-  const manualSync=async()=>{
-    setStatus("booting");
-    try{const row=await dbLoad();if(row?.data){setData(mergeChecklistData(row.data));setLastUpdatedAt(row.updated_at);}setLastSync(new Date());setStatus("idle");}
-    catch(e){setErrMsg(e.message);setStatus("error");}
-  };
-
-  const all=flat(data),done=all.filter(i=>i.done).length,total=all.length,progress=pct(done,total),pc=sClr(progress);
-  const SM={
-    booting:{dot:B.yellow,  pulse:true, label:"Conectando…"},
-    idle:   {dot:B.greenL,  pulse:false,label:`Atualizado ${fmt(lastSync)}`},
-    saving: {dot:B.blueL,   pulse:true, label:"Salvando…"},
-    saved:  {dot:B.greenL,  pulse:false,label:`Salvo ${fmt(lastSync)}`},
-    error:  {dot:"#C0392B", pulse:false,label:`Erro: ${errMsg}`},
-  }[status];
-
-  return(
-    <div style={{minHeight:"100vh",background:"#060911",padding:"24px 20px"}}>
-    <div style={{maxWidth:1320,margin:"0 auto",background:"#0C1018",borderRadius:18,border:"1px solid rgba(255,255,255,.06)",overflow:"hidden",boxShadow:"0 8px 60px rgba(0,0,0,.5)"}}>
-
-      {/* ── HERO ── */}
-      <header style={{position:"relative",overflow:"hidden",background:"linear-gradient(155deg,#0F1825 0%,#0C1018 55%)",borderBottom:"1px solid rgba(255,255,255,.07)"}}>
-
-        {/* Arco decorativo (cores do gradiente do SVG) */}
-        <div style={{position:"absolute",right:-80,top:-80,width:420,height:420,borderRadius:"50%",background:"radial-gradient(circle,rgba(245,179,32,.07) 0%,transparent 65%)",pointerEvents:"none"}}/>
-        <div style={{position:"absolute",left:-60,bottom:-60,width:300,height:300,borderRadius:"50%",background:"radial-gradient(circle,rgba(13,119,168,.08) 0%,transparent 65%)",pointerEvents:"none"}}/>
-
-        {/* Top bar — logo + sync */}
-        <div style={{position:"relative",zIndex:2,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"20px 36px",borderBottom:"1px solid rgba(255,255,255,.05)",flexWrap:"wrap",gap:14}}>
-          {/* Logo horizontal real */}
-          <img src={LOGO_H} alt="200 Anos Câmara dos Deputados" style={{height:50,width:"auto",flexShrink:0}}/>
-
-          {/* Sync pill */}
-          <div style={{display:"flex",alignItems:"center",gap:10,background:"rgba(255,255,255,.04)",border:"1px solid rgba(255,255,255,.08)",borderRadius:10,padding:"9px 14px"}}>
-            <span style={{width:8,height:8,borderRadius:"50%",background:SM.dot,display:"inline-block",flexShrink:0,boxShadow:SM.pulse?`0 0 10px ${SM.dot}`:"none",animation:SM.pulse?"pulse 1.1s ease-in-out infinite":"none"}}/>
-            <div>
-              <div style={{fontSize:"0.72rem",fontWeight:600,color:SM.dot}}>{SM.label}</div>
-              <div style={{fontSize:"0.58rem",color:"#3A4560",marginTop:2,letterSpacing:"1.5px",textTransform:"uppercase"}}>Supabase · sync a cada 5s</div>
-            </div>
-            <button onClick={manualSync} style={{background:"rgba(255,255,255,.06)",border:"1px solid rgba(255,255,255,.1)",color:"#7080A0",borderRadius:6,padding:"4px 9px",fontSize:"1rem",lineHeight:1}}>↻</button>
+      function Checkbox({ done }) {
+        return (
+          <div className={`checkbox ${done ? "is-checked" : ""}`}>
+            {done && (
+              <svg
+                width="12"
+                height="10"
+                viewBox="0 0 12 10"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1.2 5.2L4.5 8.4L10.8 1.4"
+                  stroke="#131313"
+                  strokeWidth="2.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
+              </svg>
+            )}
           </div>
-        </div>
+        );
+      }
 
-        {/* Título */}
-        <div style={{position:"relative",zIndex:2,padding:"28px 36px 34px"}}>
-          <p style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.68rem",fontWeight:600,letterSpacing:"6px",color:"#4A5A7A",marginBottom:8,textTransform:"uppercase"}}>PLANO DE AÇÃO · REDES SOCIAIS · 17/05/2025</p>
-          <h1 style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"clamp(2.4rem,5.5vw,4rem)",fontWeight:900,letterSpacing:"4px",lineHeight:.95,color:"#FFFFFF",textTransform:"uppercase",marginBottom:14}}>CORRIDA DA<br/>CÂMARA</h1>
-          <p style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"1.15rem",fontWeight:700,letterSpacing:"5px",textTransform:"uppercase"}}>
-            <span style={{color:"#D0DCEC"}}>APONTANDO PARA O </span>
-            <span style={{color:B.yellowL}}>FUTURO</span>
-          </p>
-        </div>
-      </header>
+      function App() {
+        const [data, setData] = useState(INITIAL);
+        const [status, setStatus] = useState("booting");
+        const [lastSync, setLastSync] = useState(null);
+        const [lastUpdatedAt, setLastUpdatedAt] = useState(null);
+        const [errMsg, setErrMsg] = useState("");
+        const saveTimer = useRef(null);
+        const booted = useRef(false);
 
-      {/* Boot overlay */}
-      {status==="booting"&&!booted.current&&(
-        <div style={{position:"fixed",inset:0,background:"rgba(12,16,24,.93)",zIndex:200,display:"flex",alignItems:"center",justifyContent:"center"}}>
-          <div style={{textAlign:"center",padding:"44px 60px",background:"#131B28",border:"1px solid rgba(255,255,255,.07)",borderRadius:20}}>
-            <div style={{fontSize:"2.8rem",display:"block",marginBottom:16,animation:"spin 1.1s linear infinite",color:B.blue}}>⚡</div>
-            <p style={{color:"#7080A0",fontFamily:"'Barlow Condensed',sans-serif",textTransform:"uppercase",letterSpacing:"2px"}}>Carregando do Supabase…</p>
-          </div>
-        </div>
-      )}
+        useEffect(() => {
+          (async () => {
+            try {
+              const row = await dbLoad();
+              if (row?.data && Object.keys(row.data).length > 0) {
+                setData(mergeChecklistData(row.data));
+                setLastUpdatedAt(row.updated_at);
+              }
+              setLastSync(new Date());
+              setStatus("idle");
+            } catch (e) {
+              setErrMsg(e.message);
+              setStatus("error");
+            } finally {
+              booted.current = true;
+            }
+          })();
+        }, []);
 
-      {/* ── PROGRESS ── */}
-      <div style={{padding:"24px 36px",background:"rgba(255,255,255,.014)",borderBottom:"1px solid rgba(255,255,255,.05)"}}>
-        <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",marginBottom:14,flexWrap:"wrap",gap:10}}>
-          <div>
-            <p style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.63rem",fontWeight:600,letterSpacing:"5px",color:"#4A5A7A",textTransform:"uppercase",marginBottom:8}}>PROGRESSO GERAL DO EVENTO</p>
-            <div style={{display:"flex",gap:8,flexWrap:"wrap"}}>
-              <span style={{background:`${B.greenL}18`,color:B.greenL,padding:"3px 12px",borderRadius:99,fontSize:"0.72rem",fontWeight:600}}>✓ {done} concluídos</span>
-              <span style={{background:"rgba(255,255,255,.05)",color:"#5A6A8A",padding:"3px 12px",borderRadius:99,fontSize:"0.72rem"}}>○ {total-done} pendentes</span>
-              <span style={{background:`${B.yellow}22`,color:B.yellowL,padding:"3px 12px",borderRadius:99,fontSize:"0.72rem"}}>◈ {total} total</span>
-            </div>
-          </div>
-          <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"4.2rem",fontWeight:900,lineHeight:1,color:pc,transition:"color .5s",letterSpacing:"-3px"}}>{progress}<span style={{fontSize:"2rem",opacity:.45}}>%</span></span>
-        </div>
-        <div style={{height:8,background:"rgba(255,255,255,.07)",borderRadius:99,overflow:"hidden"}}>
-          <div style={{height:"100%",borderRadius:99,width:`${progress}%`,background:`linear-gradient(90deg,${B.blue},${pc})`,transition:"width .6s cubic-bezier(.4,0,.2,1)",boxShadow:`0 0 18px ${pc}44`}}/>
-        </div>
-      </div>
+        useEffect(() => {
+          if (!booted.current) return;
+          setStatus("saving");
+          clearTimeout(saveTimer.current);
+          saveTimer.current = setTimeout(async () => {
+            try {
+              await dbSave(data);
+              setLastSync(new Date());
+              setStatus("saved");
+              setTimeout(() => setStatus("idle"), 2500);
+            } catch (e) {
+              setErrMsg(e.message);
+              setStatus("error");
+            }
+          }, 1200);
+          return () => clearTimeout(saveTimer.current);
+        }, [data]);
 
-      {/* Patrocínio */}
-      <div style={{padding:"9px 36px",background:`${B.yellow}08`,borderBottom:`1px solid ${B.yellow}20`,display:"flex",alignItems:"center",gap:10,flexWrap:"wrap"}}>
-        <span style={{width:6,height:6,borderRadius:"50%",background:B.yellowL,display:"inline-block",flexShrink:0}}/>
-        <span style={{fontSize:"0.71rem",color:"#6070A0"}}>Itens <strong style={{color:B.yellowL}}>obrigatórios</strong> são contrapartida de patrocínio — {SPONSORS}</span>
-      </div>
+        useEffect(() => {
+          const id = setInterval(async () => {
+            if (status === "saving" || status === "booting") return;
+            try {
+              const row = await dbLoad();
+              if (row?.updated_at && row.updated_at !== lastUpdatedAt) {
+                setData(mergeChecklistData(row.data));
+                setLastUpdatedAt(row.updated_at);
+                setLastSync(new Date());
+              }
+            } catch {}
+          }, 5000);
+          return () => clearInterval(id);
+        }, [status, lastUpdatedAt]);
 
-      {/* ── SECTIONS ── */}
-      {orderedSectionEntries(data).map(([sk,section])=>{
-        const items=section.platforms.flatMap(p=>p.items);
-        const sd=items.filter(i=>i.done).length,st=items.length,sp=pct(sd,st);
-        const acc=section.accent||B.green;
-        return(
-          <section key={sk} style={{padding:"32px 36px",borderBottom:"1px solid rgba(255,255,255,.04)"}}>
-            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:24,flexWrap:"wrap",gap:12}}>
-              <div style={{display:"flex",alignItems:"center",gap:14}}>
-                <div style={{width:4,height:34,background:acc,borderRadius:3,boxShadow:`0 0 12px ${acc}88`,flexShrink:0}}/>
-                <div>
-                  <h2 style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"1.55rem",fontWeight:900,letterSpacing:"4px",textTransform:"uppercase",color:"#F0F4FC",margin:0,lineHeight:1}}>{section.label}</h2>
-                  <p style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.65rem",color:"#3A4A6A",letterSpacing:"2px",marginTop:4,textTransform:"uppercase"}}>{sd} de {st} tarefas concluídas</p>
+        const toggle = useCallback((sk, pid, iid) => {
+          setData((prev) => {
+            const sec = { ...prev[sk] };
+            sec.platforms = sec.platforms.map((p) =>
+              p.id !== pid
+                ? p
+                : {
+                    ...p,
+                    items: p.items.map((i) =>
+                      i.id === iid ? { ...i, done: !i.done } : i,
+                    ),
+                  },
+            );
+            return { ...prev, [sk]: sec };
+          });
+        }, []);
+
+        const manualSync = async () => {
+          setStatus("booting");
+          try {
+            const row = await dbLoad();
+            if (row?.data) {
+              setData(mergeChecklistData(row.data));
+              setLastUpdatedAt(row.updated_at);
+            }
+            setLastSync(new Date());
+            setStatus("idle");
+          } catch (e) {
+            setErrMsg(e.message);
+            setStatus("error");
+          }
+        };
+
+        const all = flat(data),
+          done = all.filter((i) => i.done).length,
+          total = all.length,
+          progress = pct(done, total),
+          pc = sClr(progress);
+        const SM = {
+          booting: { dot: B.yellow, pulse: true, label: "Conectando…" },
+          idle: {
+            dot: B.greenL,
+            pulse: false,
+            label: `Atualizado ${fmt(lastSync)}`,
+          },
+          saving: { dot: B.blueL, pulse: true, label: "Salvando…" },
+          saved: {
+            dot: B.greenL,
+            pulse: false,
+            label: `Salvo ${fmt(lastSync)}`,
+          },
+          error: { dot: "#d92020", pulse: false, label: `Erro: ${errMsg}` },
+        }[status];
+
+        return (
+          <div className="app-shell">
+            <div className="page-card">
+              <header className="hero">
+                <div className="topbar">
+                  <img
+                    className="brand-logo"
+                    src={LOGO_H}
+                    alt="200 Anos Câmara dos Deputados"
+                  />
+                  <div className="sync-pill" style={{ "--sync-color": SM.dot }}>
+                    <span
+                      className={`sync-dot ${SM.pulse ? "is-pulsing" : ""}`}
+                    />
+                    <div>
+                      <div className="sync-label">{SM.label}</div>
+                      <div className="sync-meta">Supabase · sync a cada 5s</div>
+                    </div>
+                    <button
+                      className="sync-button"
+                      onClick={manualSync}
+                      aria-label="Sincronizar manualmente"
+                    >
+                      ↻
+                    </button>
+                  </div>
+                </div>
+
+                <div className="hero-content">
+                  <p className="eyebrow">
+                    Plano de ação · Redes sociais · 17/05/2025
+                  </p>
+                  <h1 className="hero-title">
+                    Corrida da
+                    <br />
+                    Câmara
+                  </h1>
+                  <p className="hero-kicker">
+                    <span>Apontando para o</span> <strong>futuro</strong>
+                  </p>
+                </div>
+              </header>
+
+              {status === "booting" && !booted.current && (
+                <div className="boot-overlay">
+                  <div className="boot-card">
+                    <div className="boot-icon">⚡</div>
+                    <p>Carregando do Supabase…</p>
+                  </div>
+                </div>
+              )}
+
+              <div
+                className="progress-block"
+                style={{ "--progress-color": pc }}
+              >
+                <div className="progress-head">
+                  <div>
+                    <p className="progress-title">Progresso geral do evento</p>
+                    <div className="chips">
+                      <span className="chip done">✓ {done} concluídos</span>
+                      <span className="chip pending">
+                        ○ {total - done} pendentes
+                      </span>
+                      <span className="chip total">◈ {total} total</span>
+                    </div>
+                  </div>
+                  <span className="progress-number">
+                    {progress}
+                    <span>%</span>
+                  </span>
+                </div>
+                <div className="progress-track">
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${progress}%` }}
+                  />
                 </div>
               </div>
-              <div style={{display:"flex",alignItems:"center",gap:12}}>
-                <div style={{height:4,width:130,background:"rgba(255,255,255,.07)",borderRadius:99,overflow:"hidden"}}>
-                  <div style={{height:"100%",width:`${sp}%`,background:acc,transition:"width .5s",borderRadius:99}}/>
-                </div>
-                <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"1.4rem",fontWeight:800,color:acc,minWidth:50,textAlign:"right"}}>{sp}%</span>
+
+              <div className="sponsor-strip">
+                <span className="sponsor-dot" />
+                <span>
+                  Itens <strong>obrigatórios</strong> são contrapartida de
+                  patrocínio — {SPONSORS}
+                </span>
               </div>
-            </div>
-            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(268px,1fr))",gap:13}}>
-              {section.platforms.map(platform=>{
-                const pd=platform.items.filter(i=>i.done).length,pt=platform.items.length,pp=pct(pd,pt);
-                return(
-                  <div key={platform.id} style={{background:"rgba(255,255,255,.025)",border:`1px solid ${pp===100?`${B.greenL}40`:"rgba(255,255,255,.07)"}`,borderRadius:14,padding:"15px 16px",transition:"border-color .4s"}}>
-                    <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:10}}>
-                      <div style={{display:"flex",alignItems:"center",gap:10}}>
-                        <PlatformIcon name={platform.name} s={18}/>
+
+              {orderedSectionEntries(data).map(([sk, section]) => {
+                const items = section.platforms.flatMap((p) => p.items);
+                const sd = items.filter((i) => i.done).length,
+                  st = items.length,
+                  sp = pct(sd, st);
+                const acc = section.accent || B.green;
+                return (
+                  <section
+                    className="section"
+                    key={sk}
+                    style={{ "--accent": acc }}
+                  >
+                    <div className="section-head">
+                      <div className="section-title-wrap">
+                        <div className="section-mark" />
                         <div>
-                          <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:700,fontSize:"0.95rem",letterSpacing:"1px",color:"#D8E4F4",textTransform:"uppercase"}}>{platform.name}</div>
-                          <div style={{fontSize:"0.62rem",color:"#3A4A6A",marginTop:2}}>{platform.handle}</div>
+                          <h2 className="section-title">{section.label}</h2>
+                          <p className="section-meta">
+                            {sd} de {st} tarefas concluídas
+                          </p>
                         </div>
                       </div>
-                      <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.85rem",fontWeight:700,border:`1.5px solid ${sClr(pp)}`,borderRadius:99,padding:"2px 10px",color:sClr(pp),background:`${sClr(pp)}14`,transition:"all .3s",flexShrink:0}}>{pd}/{pt}</div>
+                      <div className="section-progress">
+                        <div className="mini-track">
+                          <div
+                            className="mini-fill"
+                            style={{ width: `${sp}%` }}
+                          />
+                        </div>
+                        <span className="section-percent">{sp}%</span>
+                      </div>
                     </div>
-                    <div style={{height:3,background:"rgba(255,255,255,.07)",borderRadius:99,marginBottom:11,overflow:"hidden"}}>
-                      <div style={{height:"100%",borderRadius:99,width:`${pp}%`,background:sClr(pp),transition:"width .4s"}}/>
+                    <div className="platform-grid">
+                      {section.platforms.map((platform) => {
+                        const pd = platform.items.filter((i) => i.done).length,
+                          pt = platform.items.length,
+                          pp = pct(pd, pt),
+                          badge = sClr(pp);
+                        return (
+                          <div
+                            className={`platform-card ${pp === 100 ? "is-complete" : ""}`}
+                            key={platform.id}
+                          >
+                            <div className="platform-head">
+                              <div className="platform-name">
+                                <PlatformIcon name={platform.name} s={20} />
+                                <div>
+                                  <div className="platform-title">
+                                    {platform.name}
+                                  </div>
+                                  <div className="platform-handle">
+                                    {platform.handle}
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                className="count-badge"
+                                style={{ "--badge-color": badge }}
+                              >
+                                {pd}/{pt}
+                              </div>
+                            </div>
+                            <div className="platform-track">
+                              <div
+                                className="platform-fill"
+                                style={{
+                                  width: `${pp}%`,
+                                  "--badge-color": badge,
+                                }}
+                              />
+                            </div>
+                            <ul className="task-list">
+                              {platform.items.map((item) => (
+                                <li
+                                  className={`task-item ${item.done ? "is-done" : ""}`}
+                                  key={item.id}
+                                  onClick={() =>
+                                    toggle(sk, platform.id, item.id)
+                                  }
+                                >
+                                  <Checkbox done={item.done} />
+                                  <span className="task-label">
+                                    {item.label}
+                                    {item.mandatory && (
+                                      <span className="mandatory">
+                                        obrigatório
+                                      </span>
+                                    )}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        );
+                      })}
                     </div>
-                    <ul style={{listStyle:"none",display:"flex",flexDirection:"column",gap:3}}>
-                      {platform.items.map(item=>(
-                        <li key={item.id}
-                          onClick={()=>toggle(sk,platform.id,item.id)}
-                          style={{display:"flex",alignItems:"flex-start",gap:10,cursor:"pointer",padding:"6px 8px",borderRadius:8,userSelect:"none",transition:"background .15s"}}
-                          onMouseEnter={e=>e.currentTarget.style.background="rgba(255,255,255,.04)"}
-                          onMouseLeave={e=>e.currentTarget.style.background="transparent"}
-                        >
-                          <Checkbox done={item.done}/>
-                          <span style={{fontSize:"0.78rem",lineHeight:1.45,color:item.done?"#2A3650":"#B0C0DC",textDecoration:item.done?"line-through":"none",display:"flex",flexWrap:"wrap",alignItems:"center",gap:5,transition:"color .2s"}}>
-                            {item.label}
-                            {item.mandatory&&<span style={{fontSize:"0.57rem",letterSpacing:"1px",background:`${B.yellow}18`,color:B.yellowL,padding:"1px 6px",borderRadius:99,textTransform:"uppercase",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:700,flexShrink:0}}>obrigatório</span>}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  </section>
                 );
               })}
-            </div>
-          </section>
-        );
-      })}
 
-      {/* ── EQUIPE ── */}
-      <section style={{padding:"32px 36px",borderBottom:"1px solid rgba(255,255,255,.04)"}}>
-        <div style={{display:"flex",alignItems:"center",gap:14,marginBottom:22}}>
-          <div style={{width:4,height:34,background:B.yellowL,borderRadius:3,boxShadow:`0 0 12px ${B.yellow}80`}}/>
-          <div>
-            <h2 style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"1.55rem",fontWeight:900,letterSpacing:"4px",textTransform:"uppercase",color:"#F0F4FC",margin:0}}>EQUIPE ESCALADA</h2>
-            <p style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.65rem",color:"#3A4A6A",letterSpacing:"2px",marginTop:4,textTransform:"uppercase"}}>17 de maio de 2025</p>
+              <section className="section" style={{ "--accent": B.yellowL }}>
+                <div className="section-head">
+                  <div className="section-title-wrap">
+                    <div className="section-mark" />
+                    <div>
+                      <h2 className="section-title">Equipe escalada</h2>
+                      <p className="section-meta">17 de maio de 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="team-grid">
+                  {EQUIPE.map((m, i) => (
+                    <div className="team-card" key={i}>
+                      <div className="avatar">{m.name[0]}</div>
+                      <div>
+                        <div className="member-name">{m.name}</div>
+                        <div className="member-role">{m.role}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="runners">
+                  <span className="runners-label">🏃 Quem vai correr:</span>
+                  {CORREDORES.map((c, i) => (
+                    <span className="runner-chip" key={i}>
+                      {c}
+                    </span>
+                  ))}
+                </div>
+              </section>
+
+              <footer className="footer">
+                <img src={LOGO_H} alt="200 Anos Câmara dos Deputados" />
+                <span>⚡ Sync a cada 5s · Supabase</span>
+              </footer>
+            </div>
           </div>
-        </div>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(212px,1fr))",gap:11,marginBottom:18}}>
-          {EQUIPE.map((m,i)=>(
-            <div key={i} style={{display:"flex",alignItems:"center",gap:12,background:"rgba(255,255,255,.025)",border:"1px solid rgba(255,255,255,.06)",borderRadius:12,padding:"11px 13px"}}>
-              <div style={{width:35,height:35,borderRadius:"50%",background:`linear-gradient(135deg,${B.blue},${B.greenL})`,display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"'Barlow Condensed',sans-serif",fontSize:"1rem",fontWeight:800,color:"white",flexShrink:0}}>{m.name[0]}</div>
-              <div>
-                <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:700,fontSize:"0.95rem",color:"#D8E4F4"}}>{m.name}</div>
-                <div style={{fontSize:"0.63rem",color:"#3A4A6A",marginTop:2,lineHeight:1.3}}>{m.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div style={{display:"flex",flexWrap:"wrap",alignItems:"center",gap:8,padding:"13px 16px",background:`${B.greenL}08`,border:`1px solid ${B.greenL}22`,borderRadius:12}}>
-          <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:700,fontSize:"0.9rem",color:B.greenL,letterSpacing:"2px",textTransform:"uppercase",marginRight:6}}>🏃 Quem vai correr:</span>
-          {CORREDORES.map((c,i)=>(
-            <span key={i} style={{background:"rgba(255,255,255,.06)",border:"1px solid rgba(255,255,255,.08)",padding:"3px 11px",borderRadius:99,fontSize:"0.74rem",color:"#B0C0DC"}}>{c}</span>
-          ))}
-        </div>
-      </section>
+        );
+      }
 
-      {/* ── FOOTER ── */}
-      <footer style={{padding:"20px 36px",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:14,borderTop:"1px solid rgba(255,255,255,.05)",background:"rgba(0,0,0,.3)"}}>
-        <img src={LOGO_H} alt="200 Anos Câmara dos Deputados" style={{height:28,width:"auto",opacity:.7}}/>
-        <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.65rem",letterSpacing:"2px",color:B.greenL,textTransform:"uppercase",fontWeight:600}}>⚡ SYNC A CADA 5s · SUPABASE</span>
-      </footer>
-    </div>
-    </div>
-  );
-}
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
-</script>
-</body>
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
 </html>
