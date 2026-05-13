@@ -208,6 +208,29 @@ const pct=(a,b)=>b===0?0:Math.round(a/b*100);
 const sClr=p=>p<33?"#C0392B":p<66?B.yellow:B.greenL;
 const fmt=d=>d?d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit",second:"2-digit"}):"";
 
+function mergeChecklistData(saved){
+  if(!saved||Object.keys(saved).length===0)return INITIAL;
+  const mandatoryById=new Map();
+  Object.values(INITIAL).forEach(section=>{
+    section.platforms.forEach(platform=>{
+      platform.items.forEach(item=>mandatoryById.set(item.id,item.mandatory));
+    });
+  });
+  return Object.fromEntries(Object.entries(saved).map(([sectionKey,section])=>[
+    sectionKey,
+    {
+      ...section,
+      platforms:section.platforms?.map(platform=>({
+        ...platform,
+        items:platform.items?.map(item=>({
+          ...item,
+          mandatory:mandatoryById.has(item.id)?mandatoryById.get(item.id):item.mandatory,
+        }))||[],
+      }))||[],
+    },
+  ]));
+}
+
 function Checkbox({done}){
   return(
     <div style={{width:19,height:19,borderRadius:5,flexShrink:0,marginTop:1,display:"flex",alignItems:"center",justifyContent:"center",transition:"all .2s",background:done?B.greenL:"transparent",border:done?"none":"1.5px solid rgba(255,255,255,.2)"}}>
@@ -227,7 +250,7 @@ function App(){
 
   useEffect(()=>{
     (async()=>{
-      try{const row=await dbLoad();if(row?.data&&Object.keys(row.data).length>0){setData(row.data);setLastUpdatedAt(row.updated_at);}setLastSync(new Date());setStatus("idle");}
+      try{const row=await dbLoad();if(row?.data&&Object.keys(row.data).length>0){setData(mergeChecklistData(row.data));setLastUpdatedAt(row.updated_at);}setLastSync(new Date());setStatus("idle");}
       catch(e){setErrMsg(e.message);setStatus("error");}
       finally{booted.current=true;}
     })();
@@ -247,7 +270,7 @@ function App(){
   useEffect(()=>{
     const id=setInterval(async()=>{
       if(status==="saving"||status==="booting")return;
-      try{const row=await dbLoad();if(row?.updated_at&&row.updated_at!==lastUpdatedAt){setData(row.data);setLastUpdatedAt(row.updated_at);setLastSync(new Date());}}
+      try{const row=await dbLoad();if(row?.updated_at&&row.updated_at!==lastUpdatedAt){setData(mergeChecklistData(row.data));setLastUpdatedAt(row.updated_at);setLastSync(new Date());}}
       catch{}
     },5000);
     return()=>clearInterval(id);
@@ -263,7 +286,7 @@ function App(){
 
   const manualSync=async()=>{
     setStatus("booting");
-    try{const row=await dbLoad();if(row?.data){setData(row.data);setLastUpdatedAt(row.updated_at);}setLastSync(new Date());setStatus("idle");}
+    try{const row=await dbLoad();if(row?.data){setData(mergeChecklistData(row.data));setLastUpdatedAt(row.updated_at);}setLastSync(new Date());setStatus("idle");}
     catch(e){setErrMsg(e.message);setStatus("error");}
   };
 
