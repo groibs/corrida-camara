@@ -4,6 +4,12 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Corrida da Câmara – Checklist</title>
+  <meta property="og:title" content="Corrida da Câmara – Plano de ação"/>
+  <meta property="og:description" content="Checklist de redes sociais e equipe escalada para a Corrida da Câmara."/>
+  <meta property="og:image" content="https://corrida-camara.vercel.app/assets/preview-corrida-camara.svg"/>
+  <meta property="og:image:width" content="559"/>
+  <meta property="og:image:height" content="343"/>
+  <meta property="og:type" content="website"/>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -99,6 +105,8 @@ function PlatformIcon({name,s=17}){
 }
 
 /* Checklist data */
+const SPONSORS="@caixa · @caixaesportes · @govbr · @geapsaude · @sindilegis";
+
 const INITIAL={
   preCorrida:{label:"PRÉ-CORRIDA",accent:B.blue,platforms:[
     {id:"ig-pre", name:"Instagram",              handle:"@camaradosdeputados",items:[
@@ -108,6 +116,7 @@ const INITIAL={
       {id:"ig4",label:"14/5 – Participação popular + contagem regressiva",done:false,mandatory:false},
       {id:"ig5",label:"15/5 – Últimos momentos para pegar kits",done:false,mandatory:false},
       {id:"ig6",label:"16/5 – É amanhã! (+programação?)",done:false,mandatory:false},
+      {id:"ig7",label:`Collab no Instagram + marcação @camaradosdeputados – ${SPONSORS}`,done:false,mandatory:true},
     ]},
     {id:"fb-pre", name:"Facebook",               handle:"@camaradosdeputados",items:[
       {id:"fb1",label:"11/5 – Entrega de kits",done:true,mandatory:true},
@@ -135,6 +144,7 @@ const INITIAL={
       {id:"igd5",label:"Stories – Republicação do feed",done:false,mandatory:false},
       {id:"igd6",label:"Feed – Vídeo com os melhores momentos",done:false,mandatory:false},
       {id:"igd7",label:"Feed – Galeria de fotos + falas de destaque",done:false,mandatory:false},
+      {id:"igd8",label:`Collab no Instagram + marcação @camaradosdeputados – ${SPONSORS}`,done:false,mandatory:true},
     ]},
     {id:"ig-dia-tv",name:"Instagram",handle:"@radiocamara e @tvcamaradosdeputados",items:[
       {id:"igtv1",label:"Transmissão da programação especial",done:false,mandatory:false},
@@ -183,6 +193,7 @@ const EQUIPE=[
   {name:"Cris Saemi", role:"Validação/publicação @radio e @tv"},
   {name:"Renata",     role:"Validação/publicação Pinterest"},
   {name:"Caio",       role:"Produtor de corte"},
+  {name:"Yusseff",    role:"Produtor de sonoras da corrida"},
   {name:"Luciana",    role:"Seleção de depoimentos"},
   {name:"Pablo e Luís",role:"Videomakers"},
   {name:"Lucas",      role:"Designer"},
@@ -190,7 +201,7 @@ const EQUIPE=[
   {name:"Ginny",      role:"Coordenação"},
   {name:"João Paulo", role:"Entrada ao vivo / cobertura conjunta"},
 ];
-const CORREDORES=["Clarice","Well","Carol","Malu","Pedro","Isaque","Mari","Diego","Vera"];
+const CORREDORES=["Clarice","Well","Carol","Malu","Pedro","Isaque","Mari","Diego","Vera","Yusseff"];
 
 const flat=d=>Object.values(d).flatMap(s=>s.platforms.flatMap(p=>p.items));
 const pct=(a,b)=>b===0?0:Math.round(a/b*100);
@@ -334,7 +345,7 @@ function App(){
       {/* Patrocínio */}
       <div style={{padding:"9px 36px",background:`${B.yellow}08`,borderBottom:`1px solid ${B.yellow}20`,display:"flex",alignItems:"center",gap:10,flexWrap:"wrap"}}>
         <span style={{width:6,height:6,borderRadius:"50%",background:B.yellowL,display:"inline-block",flexShrink:0}}/>
-        <span style={{fontSize:"0.71rem",color:"#6070A0"}}>Itens <strong style={{color:B.yellowL}}>obrigatórios</strong> são contrapartida de patrocínio — @caixa · @caixaesportes · @govbr · @geapsaude · @sindilegis</span>
+        <span style={{fontSize:"0.71rem",color:"#6070A0"}}>Itens <strong style={{color:B.yellowL}}>obrigatórios</strong> são contrapartida de patrocínio — {SPONSORS}</span>
       </div>
 
       {/* ── SECTIONS ── */}

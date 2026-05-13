@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="559" height="343" viewBox="0 0 559 343" role="img" aria-labelledby="title desc">
+  <title id="title">Corrida da Câmara</title>
+  <desc id="desc">Miniatura de compartilhamento do plano de ação das redes sociais da Corrida da Câmara.</desc>
+  <defs>
+    <style>
+      .condensed{font-family:'Barlow Condensed','Arial Narrow','Liberation Sans Narrow',Arial,sans-serif}
+      .regular{font-family:'Barlow',Arial,sans-serif}
+    </style>
+  </defs>
+  <rect width="559" height="343" fill="#070b13"/>
+  <path d="M48 18H559V343H33V33c0-8.284 6.716-15 15-15Z" fill="#101722"/>
+  <path d="M33 108H559" stroke="#1e2838" stroke-width="1" opacity=".85"/>
+
+  <g transform="translate(69 43)">
+    <text x="0" y="39" class="regular" font-size="46" font-weight="700" letter-spacing="-4">
+      <tspan fill="#69b832">2</tspan><tspan fill="#0798d6">0</tspan><tspan fill="#ffd01a">0</tspan>
+    </text>
+    <text x="106" y="26" class="regular" font-size="16" font-weight="500" fill="#f7f9ff" letter-spacing="6">ANOS</text>
+    <line x1="175" y1="-3" x2="175" y2="42" stroke="#a7afbf" stroke-width="1" opacity=".65"/>
+    <text x="185" y="16" class="regular" font-size="17" font-weight="400" fill="#f7f9ff" letter-spacing="5">CÂMARA DOS</text>
+    <text x="185" y="39" class="regular" font-size="17" font-weight="400" fill="#f7f9ff" letter-spacing="5">DEPUTADOS</text>
+  </g>
+
+  <text x="69" y="149" class="condensed" font-size="10" font-weight="500" fill="#49689e" letter-spacing="9">PLANO DE AÇÃO - REDES SOCIAIS - 17/05/2025</text>
+  <text x="68" y="213" class="condensed" font-size="60" font-weight="900" fill="#ffffff" letter-spacing="4">CORRIDA DA</text>
+  <text x="68" y="274" class="condensed" font-size="60" font-weight="900" fill="#ffffff" letter-spacing="4">CÂMARA</text>
+  <text x="69" y="313" class="condensed" font-size="17" font-weight="800" fill="#ffffff" letter-spacing="8">APONTANDO PARA O <tspan fill="#ffd515">FUTURO</tspan></text>
+</svg>
