@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{background:#0C1018;color:#E8EDF5;font-family:'Barlow',sans-serif;min-height:100vh}
+    body{background:#060911;color:#E8EDF5;font-family:'Barlow',sans-serif;min-height:100vh}
     @keyframes pulse{0%,100%{opacity:1}50%{opacity:.28}}
     @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
     ::-webkit-scrollbar{width:5px}
@@ -266,7 +266,8 @@ function App(){
   }[status];
 
   return(
-    <div style={{minHeight:"100vh",background:"#0C1018"}}>
+    <div style={{minHeight:"100vh",background:"#060911",padding:"24px 20px"}}>
+    <div style={{maxWidth:1320,margin:"0 auto",background:"#0C1018",borderRadius:18,border:"1px solid rgba(255,255,255,.06)",overflow:"hidden",boxShadow:"0 8px 60px rgba(0,0,0,.5)"}}>
 
       {/* ── HERO ── */}
       <header style={{position:"relative",overflow:"hidden",background:"linear-gradient(155deg,#0F1825 0%,#0C1018 55%)",borderBottom:"1px solid rgba(255,255,255,.07)"}}>
@@ -433,6 +434,7 @@ function App(){
         <img src={LOGO_H} alt="200 Anos Câmara dos Deputados" style={{height:28,width:"auto",opacity:.7}}/>
         <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.65rem",letterSpacing:"2px",color:B.greenL,textTransform:"uppercase",fontWeight:600}}>⚡ SYNC A CADA 5s · SUPABASE</span>
       </footer>
+    </div>
     </div>
   );
 }
