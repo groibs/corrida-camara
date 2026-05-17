@@ -252,8 +252,7 @@ function App(){
   const[lastSync,setLastSync]=useState(null);
   const[lastUpdatedAt,setLastUpdatedAt]=useState(null);
   const[errMsg,setErrMsg]=useState("");
-  const[openSections,setOpenSections]=useState({diaCorrida:true,preCorrida:true});
-  const[openEquipe,setOpenEquipe]=useState(true);
+  const[openSection,setOpenSection]=useState(null);
   const saveTimer=useRef(null);
   const booted=useRef(false);
 
@@ -385,10 +384,10 @@ function App(){
         const items=section.platforms.flatMap(p=>p.items);
         const sd=items.filter(i=>i.done).length,st=items.length,sp=pct(sd,st);
         const acc=section.accent||B.green;
-        const isOpen=openSections[sk]!==false;
+        const isOpen=openSection===sk;
         return(
           <section key={sk} style={{padding:"32px 36px",borderBottom:"1px solid rgba(255,255,255,.04)"}}>
-            <div onClick={()=>setOpenSections(prev=>({...prev,[sk]:!isOpen}))} style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:isOpen?24:0,flexWrap:"wrap",gap:12,cursor:"pointer",userSelect:"none"}}>
+            <div onClick={()=>setOpenSection(isOpen?null:sk)} style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:isOpen?24:0,flexWrap:"wrap",gap:12,cursor:"pointer",userSelect:"none"}}>
               <div style={{display:"flex",alignItems:"center",gap:14}}>
                 <div style={{width:4,height:34,background:acc,borderRadius:3,boxShadow:`0 0 12px ${acc}88`,flexShrink:0}}/>
                 <div>
@@ -448,7 +447,7 @@ function App(){
 
       {/* ── EQUIPE ── */}
       <section style={{padding:"32px 36px",borderBottom:"1px solid rgba(255,255,255,.04)"}}>
-        <div onClick={()=>setOpenEquipe(p=>!p)} style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:openEquipe?22:0,cursor:"pointer",userSelect:"none"}}>
+        <div onClick={()=>setOpenSection(openSection==='equipe'?null:'equipe')} style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:openSection==='equipe'?22:0,cursor:"pointer",userSelect:"none"}}>
           <div style={{display:"flex",alignItems:"center",gap:14}}>
             <div style={{width:4,height:34,background:B.yellowL,borderRadius:3,boxShadow:`0 0 12px ${B.yellow}80`}}/>
             <div>
@@ -456,9 +455,9 @@ function App(){
               <p style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:"0.65rem",color:"#3A4A6A",letterSpacing:"2px",marginTop:4,textTransform:"uppercase"}}>17 de maio de 2025</p>
             </div>
           </div>
-          <span style={{fontSize:"1.1rem",color:B.yellowL,display:"inline-block",transition:"transform .3s",transform:openEquipe?"rotate(180deg)":"rotate(0deg)",lineHeight:1}}>▾</span>
+          <span style={{fontSize:"1.1rem",color:B.yellowL,display:"inline-block",transition:"transform .3s",transform:openSection==='equipe'?"rotate(180deg)":"rotate(0deg)",lineHeight:1}}>▾</span>
         </div>
-        {openEquipe&&<>
+        {openSection==='equipe'&&<>
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(212px,1fr))",gap:11,marginBottom:18}}>
             {EQUIPE.map((m,i)=>(
               <div key={i} style={{display:"flex",alignItems:"center",gap:12,background:"rgba(255,255,255,.025)",border:"1px solid rgba(255,255,255,.06)",borderRadius:12,padding:"11px 13px"}}>
